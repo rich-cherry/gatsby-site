@@ -1,15 +1,14 @@
 import React from "react"
-import Footer from "../components/footer"
-import Header from "../components/header"
+import Layout from "../components/layout"
 
 
 export default function IndexPage() {
   return (
     <div>
-      <Header />
-      <h1>Hello.</h1>
-      <h2>I'm Rich, a developer.</h2>
-      <Footer />
+      <Layout>
+        <h1>Hello.</h1>
+        <h2>I'm Rich, a developer.</h2>
+      </Layout>
     </div>
   )
 }

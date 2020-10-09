@@ -5,14 +5,14 @@ import { Link } from 'gatsby'
 export default function Header() {
   return (
       <div>
-        <div>
+        <h1>
           <Link to="/">rc</Link>
-        </div>
-        <div>
-          <Link to="/about">About</Link>
-          <Link to="/blog">Blog</Link>
-          <Link to="/contact">Contact</Link>
-        </div>
+        </h1>
+        <nav>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+        </nav>
       </div>
     )
 }
