@@ -12,7 +12,7 @@ export default function Footer() {
     }
     `)
   return (
-    <div>
+    <div className={footerStyles.footer}>
       <p>Created by {data.site.siteMetadata.author}, © {new Date().getFullYear()}</p>
     </div>
     )

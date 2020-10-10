@@ -5,7 +5,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sass',
-    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -19,6 +18,24 @@ module.exports = {
         typekit: {
           id: 'bmr8cor'
         }
+      }
+    },
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+        {
+          resolve: 'gatsby-remark-relative-images'
+        },
+        {
+          resolve: 'gatsby-remark-images',
+          options: {
+            maxWidth: 750,
+            linkImagesToOriginal: false
+          }
+        }
+        ]
       }
     }
   ],
