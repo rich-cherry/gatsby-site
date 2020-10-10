@@ -1,9 +1,9 @@
 ---
-title: "This is a test post"
+title: "This is the Gatsby Blog Post!"
 date: "2020-10-10"
 ---
 
-This is a template for a blog post.
+This is a super awesome template for a blog post.
 
 ## Topics Covered
 
