@@ -4,6 +4,7 @@ module.exports = {
     author: 'The Big Lebowski'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
       resolve: `gatsby-source-contentful`,
