@@ -35,77 +35,92 @@ export default function Contact() {
   return (
     <Layout>
       <Head title="Contact" />
-      <h1>Contact</h1>
-      <form
-        name="contact v2"
-        method="post"
-        action="/thanks/"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}
-        className={contactStyles.form}
-      >
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="contact v2" />
-        <p hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-          </label>
-        </p>
-        <p>
-          <label>
-            First Name:
+      <div className={contactStyles.container}>
+
+        <form
+          name="contact v2"
+          method="post"
+          action="/thanks/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
+          className={contactStyles.form}
+        >
+          <h1 className={contactStyles.container}>Contact</h1>
+          <input type="hidden" name="form-name" value="contact v2" />
+          <p hidden>
+            <label>
+              Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+            </label>
+          </p>
+
+          <div className={contactStyles.inputRow}>
+            <p>
+              <label htmlFor="first-name">
+                First Name:
             <br />
-            <input className={contactStyles.input} type="text" name="First Name" onChange={handleChange} placeholder="First Name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Last Name:
+                <input className={contactStyles.input} id="first-name" type="text" name="First Name" onChange={handleChange} placeholder="First Name" />
+              </label>
+            </p>
+            <div className={contactStyles.space}></div>
+            <p>
+              <label htmlFor="last-name">
+                Last Name:
             <br />
-            <input className={contactStyles.input} type="text" name="Last Name" onChange={handleChange} placeholder="Last Name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your email:
+                <input className={contactStyles.input} id="last-name" type="text" name="Last Name" onChange={handleChange} placeholder="Last Name" />
+              </label>
+            </p>
+          </div>
+          <div className={contactStyles.inputRow}>
+            <p>
+              <label htmlFor="email">
+                Your email:
             <br />
-            <input className={contactStyles.input} type="email" name="email" onChange={handleChange} placeholder="Email" required />
-          </label>
-        </p>
-        <p>
-          What can we help you with?
+                <input className={contactStyles.input} id="email" type="email" name="email" onChange={handleChange} placeholder="Email" required />
+              </label>
+            </p>
+            <div className={contactStyles.space}></div>
+            <p>
+              <label htmlFor="phone">
+                Phone:
+            <br />
+                <input className={contactStyles.input} id="phone" type="tel" name="Phone" onChange={handleChange} placeholder="Phone" />
+              </label>
+            </p>
+          </div>
+          <p>
+            <label htmlFor="interest">
+              What can we help you with?
              <br />
-          <input type="checkbox" name="New Shopify Store" onChange={handleChange} />New Shopify Store <br />
-          <input type="checkbox" name="Shopify Migration" onChange={handleChange} />Shopify Migration<br />
-          <input type="checkbox" name="Shopify Tweaks and Customizations" onChange={handleChange} />Shopify Tweaks and Customizations <br />
-          <input type="checkbox" name="Klaviyo Email Integration and Setup" onChange={handleChange} />Klaviyo Email Integration and Setup <br />
-        </p>
-        <p>
-          <label>
-            Website (if applicable):
+              <input type="checkbox" id="interest" name="New Shopify Store" onChange={handleChange} />New Shopify Store <br />
+              <input type="checkbox" id="interest" name="Shopify Migration" onChange={handleChange} />Shopify Migration<br />
+              <input type="checkbox" id="interest" name="Shopify Tweaks and Customizations" onChange={handleChange} />Shopify Tweaks and Customizations <br />
+              <input type="checkbox" id="interest" name="Klaviyo Email Integration and Setup" onChange={handleChange} />Klaviyo Email Integration and Setup <br />
+            </label>
+          </p>
+
+          <p>
+            <label htmlFor="website">
+              Website (if applicable):
             <br />
-            <input className={contactStyles.input} type="url" name="Website" onChange={handleChange} placeholder="Website" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Phone:
+              <input className={contactStyles.input} id="website" type="url" name="Website" onChange={handleChange} placeholder="Website" />
+            </label>
+          </p>
+
+
+          <p>
+            <label htmlFor="message">
+              Message:
             <br />
-            <input className={contactStyles.input} type="tel" name="Phone" onChange={handleChange} placeholder="Phone" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message:
-            <br />
-            <textarea className={contactStyles.input} name="message" onChange={handleChange} placeholder="Tell us a bit about yourself and your company." />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+              <textarea className={contactStyles.input} id="message" name="message" onChange={handleChange} placeholder="Tell us a bit about yourself and your company." />
+            </label>
+          </p>
+
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
     </Layout>
   )
 }

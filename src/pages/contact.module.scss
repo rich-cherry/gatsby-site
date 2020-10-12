@@ -1,10 +1,58 @@
+$light: #F9E7E7;
+$dark: #12191C;
+$mediaMaxWidth: 1260px;
+$laptopWidth: 1024px;
+$tabletWidth: 768px;
+$mobileWidth: 480px;
+
+.container {
+    display: flex;
+    justify-content: center; 
+}
+
 .form {
-    line-height: 2.3rem;
- 
+    line-height: 2rem;
+    width: 75%;
 }
 
 .input {
     background-color: white;
-    color: black;
-  
+    color:$dark;
+    width: 100%;
+    display: flex;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    p {
+        flex: 1;
+        flex-wrap: wrap;
+        // min-width: 225px;
+    }
+}
+
+.space {
+    width: 30px;
+}
+
+@media (max-width: $laptopWidth) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media (max-width: $tabletWidth) {
+    .form {
+        width: 100%;
+    }
+    .input-row {
+        p {
+            min-width: 100%;
+        }
+    }
+    .space {
+        display: none;
+    }
 }
