@@ -52,7 +52,7 @@ export default function Contact() {
           <input id="name" type="text" name="name" onChange={handleChange} value={formState.name} placeholder="Name" />
 
           <label htmlFor="email">Email</label>
-          <input id="email" type="email" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" onChange={handleChange} value={formState.email} placeholder="Email" required /><br />
+          <input id="email" type="email" name="email" onChange={handleChange} value={formState.email} placeholder="Email" required /><br />
 
 
 
