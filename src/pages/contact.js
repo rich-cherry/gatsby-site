@@ -45,30 +45,27 @@ export default function Contact() {
         <Head title="Contact" />
         <h1>Contact me</h1>
 
-        <form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" className={contactStyles.form}>
-          <input className={contactStyles.input} type="hidden" name="form-name" value="contact" />
+        <form onSubmit={handleSubmit} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
 
           <label htmlFor="name">Name</label>
-          <input id="name" type="text" name="name" onChange={handleChange} value={formState.name} placeholder="Name" />
+          <input className={contactStyles.input} id="name" type="text" name="name" onChange={handleChange} value={formState.name} placeholder="Name" />
 
           <label htmlFor="email">Email</label>
-          <input id="email" type="email" name="email" onChange={handleChange} value={formState.email} placeholder="Email" required /><br />
+          <input className={contactStyles.input} id="email" type="email" name="email" onChange={handleChange} value={formState.email} placeholder="Email" required />
 
 
 
           <label htmlFor="company">Company</label>
-          <input id="company" type="text" name="company" onChange={handleChange} value={formState.company} placeholder="company" /><br />
+          <input className={contactStyles.input} id="company" type="text" name="company" onChange={handleChange} value={formState.company} placeholder="Company" /><br />
 
           <label htmlFor="interest">What can we help you with?</label><br />
           <input id="new-store" type="checkbox" name="interest" onChange={handleChange} value="new-shopify-store" />New Shopify Store <br />
           <input id="shopify-migration" type="checkbox" name="interest" onChange={handleChange} value="shopify-migration" />Shopify Migration <br />
 
 
-
-
-
           <label htmlFor="message">Message</label><br />
-          <textarea id="message" name="message" cols="30" rows="10" onChange={handleChange} value={formState.message} placeholder="Tell us a little bit about yourself and your company or project." /><br />
+          <textarea className={contactStyles.input} id="message" name="message" cols="30" rows="10" onChange={handleChange} value={formState.message} placeholder="Tell us a little bit about yourself and your company or project." /><br />
 
           <button type="submit">Submit</button>
         </form>
