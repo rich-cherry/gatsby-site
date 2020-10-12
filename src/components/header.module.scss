@@ -1,7 +1,6 @@
 $light: #F9E7E7;
 $dark: #12191C;
 
-
 .header {
   display: flex;
   align-items: center;
@@ -26,7 +25,7 @@ $dark: #12191C;
 }
 
 .nav-item {
-  font-size: .9rem;
+  font-size: 1.25rem;
   margin-right: 1.3rem;
   position: relative;
   padding: 15px 5px;
@@ -39,7 +38,7 @@ $dark: #12191C;
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #F9E7E7;
+  background: $light;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -49,5 +48,6 @@ $dark: #12191C;
 }
 
 .active-nav-item {
-  color: yellow;
+  font-weight: bold;
+
 }
