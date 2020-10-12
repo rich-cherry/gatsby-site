@@ -91,14 +91,15 @@ export default function Contact() {
         <label htmlFor="company">Company</label>
         <input className={contactStyles.input} id="company" type="text" name="company" onChange={handleChange} placeholder="Company" /><br />
 
-        {/* 
-        <label htmlFor="interest">What can we help you with?</label><br />
-        <input id="new-store" type="checkbox" name="interest" onChange={handleChange} value="new-shopify-store" />New Shopify Store <br />
-        <input id="shopify-migration" type="checkbox" name="interest" onChange={handleChange} value="shopify-migration" />Shopify Migration <br /> */}
 
 
-        <label htmlFor="message">Message</label><br />
-        <textarea className={contactStyles.input} id="message" name="message" cols="30" rows="10" onChange={handleChange} placeholder="Tell us a little bit about yourself and your company or project." /><br />
+        {/* <label htmlFor="message">Message</label><br />
+        <textarea className={contactStyles.input} id="message" name="message" cols="30" rows="10" onChange={handleChange} placeholder="Tell us a little bit about yourself and your company or project." /><br /> */}
+        <label>
+          Message:
+            <br />
+          <textarea name="message" onChange={handleChange} />
+        </label>
 
         <button type="submit">Submit</button>
       </form>
