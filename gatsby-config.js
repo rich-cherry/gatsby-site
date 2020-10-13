@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'rc',
-    author: 'The Big Lebowski'
+    title: 'richcherry.io',
+    logo: 'rc',
+    author: 'Rich Cherry'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -33,16 +34,16 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-        {
-          resolve: 'gatsby-remark-relative-images'
-        },
-        {
-          resolve: 'gatsby-remark-images',
-          options: {
-            maxWidth: 750,
-            linkImagesToOriginal: false
+          {
+            resolve: 'gatsby-remark-relative-images'
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false
+            }
           }
-        }
         ]
       }
     }

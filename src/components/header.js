@@ -9,6 +9,7 @@ export default function Header() {
       site {
         siteMetadata {
           title
+          logo
         }
       }
     }
@@ -16,7 +17,7 @@ export default function Header() {
   return (
     <header className={headerStyles.header}>
       <h1 className={headerStyles.logo} id="rc">
-        <Link to="/">{data.site.siteMetadata.title}</Link>
+        <Link to="/">{data.site.siteMetadata.logo}</Link>
       </h1>
       <nav>
         <ul className={headerStyles.navList}>
