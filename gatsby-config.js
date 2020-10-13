@@ -5,6 +5,14 @@ module.exports = {
     author: 'Rich Cherry'
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+          id: 'bmr8cor'
+        }
+      }
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
@@ -25,14 +33,6 @@ module.exports = {
       options: {
         name: 'src',
         path: `${__dirname}/src/`
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        typekit: {
-          id: 'bmr8cor'
-        }
       }
     },
     'gatsby-plugin-sharp',
