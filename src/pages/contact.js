@@ -38,7 +38,7 @@ export default function Contact() {
       <div className={contactStyles.container}>
 
         <form
-          name="contact v2"
+          name="contact v3"
           method="post"
           action="/thanks/"
           data-netlify="true"
@@ -47,7 +47,7 @@ export default function Contact() {
           className={contactStyles.form}
         >
           <h1 className={contactStyles.container}>Contact</h1>
-          <input type="hidden" name="form-name" value="contact v2" />
+          <input type="hidden" name="form-name" value="contact v3" />
           <p hidden>
             <label>
               Don’t fill this out: <input name="bot-field" onChange={handleChange} />
@@ -59,7 +59,7 @@ export default function Contact() {
               <label htmlFor="first-name">
                 First Name:
             <br />
-                <input className={contactStyles.input} id="first-name" type="text" name="First Name" onChange={handleChange} placeholder="First Name" />
+                <input className={contactStyles.input} id="first-name" type="text" name="First Name" onChange={handleChange} placeholder="First Name" autocomplete="on" autoFocus />
               </label>
             </p>
             <div className={contactStyles.space}></div>
@@ -92,10 +92,10 @@ export default function Contact() {
             <label htmlFor="interest">
               What can we help you with?
              <br />
-              <input type="checkbox" id="interest" name="New Shopify Store" onChange={handleChange} />New Shopify Store <br />
-              <input type="checkbox" id="interest" name="Shopify Migration" onChange={handleChange} />Shopify Migration<br />
-              <input type="checkbox" id="interest" name="Shopify Tweaks and Customizations" onChange={handleChange} />Shopify Tweaks and Customizations <br />
-              <input type="checkbox" id="interest" name="Klaviyo Email Integration and Setup" onChange={handleChange} />Klaviyo Email Integration and Setup <br />
+              <input type="checkbox" className={contactStyles.checkbox} id="interest" name="New Shopify Store" onChange={handleChange} /><span> New Shopify Store </span><br />
+              <input type="checkbox" className={contactStyles.checkbox} id="interest" name="Shopify Migration" onChange={handleChange} />Shopify Migration<br />
+              <input type="checkbox" className={contactStyles.checkbox} id="interest" name="Shopify Tweaks and Customizations" onChange={handleChange} />Shopify Tweaks and Customizations <br />
+              <input type="checkbox" className={contactStyles.checkbox} id="interest" name="Klaviyo Email Integration and Setup" onChange={handleChange} />Klaviyo Email Integration and Setup <br />
             </label>
           </p>
 

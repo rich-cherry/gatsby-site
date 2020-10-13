@@ -20,6 +20,14 @@ $mobileWidth: 480px;
     color:$dark;
     width: 100%;
     display: flex;
+    padding: 5px 15px;
+}
+
+.checkbox {
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+    margin-right: .5rem;
 }
 
 .input-row {
@@ -29,7 +37,6 @@ $mobileWidth: 480px;
     p {
         flex: 1;
         flex-wrap: wrap;
-        // min-width: 225px;
     }
 }
 

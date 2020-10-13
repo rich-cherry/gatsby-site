@@ -10,7 +10,7 @@ $dark: #12191C;
 
 .logo {
   font-family: rig-solid-bold-inline, sans-serif;
-  font-size: 5rem;
+  font-size: 6rem;
   transition: transform 1s;
 }
 
@@ -25,10 +25,13 @@ $dark: #12191C;
 }
 
 .nav-item {
-  font-size: 1.25rem;
   margin-right: 1.3rem;
   position: relative;
   padding: 15px 5px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
 }
 
 
