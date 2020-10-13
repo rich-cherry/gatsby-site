@@ -3,6 +3,7 @@ import { navigate } from 'gatsby'
 import Layout from "../components/layout"
 import Head from "../components/head"
 import contactStyles from './contact.module.scss'
+import PageTransition from 'gatsby-v2-plugin-page-transitions'
 
 function encode(data) {
   return Object.keys(data)
@@ -35,93 +36,95 @@ export default function Contact() {
   return (
     <Layout>
       <Head title="Contact" />
-      <div className={contactStyles.container}>
+      <PageTransition>
+        <div className={contactStyles.container}>
 
-        <form
-          name="contact v5"
-          method="post"
-          action="/thanks/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit}
-          className={contactStyles.form}
-        >
-          <h1 className={contactStyles.container}>Contact</h1>
-          <input type="hidden" name="form-name" value="contact v5" />
-          <p hidden>
-            <label>
-              Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-            </label>
-          </p>
-
-          <div className={contactStyles.inputRow}>
-            <p>
-              <label htmlFor="first-name">
-                First Name:
-            <br />
-                <input className={contactStyles.input} id="first-name" type="text" name="First Name" onChange={handleChange} placeholder="First Name" autocomplete="on" />
+          <form
+            name="contact v5"
+            method="post"
+            action="/thanks/"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+            className={contactStyles.form}
+          >
+            <h1 className={contactStyles.container}>Contact</h1>
+            <input type="hidden" name="form-name" value="contact v5" />
+            <p hidden>
+              <label>
+                Don’t fill this out: <input name="bot-field" onChange={handleChange} />
               </label>
             </p>
-            <div className={contactStyles.space}></div>
-            <p>
-              <label htmlFor="last-name">
-                Last Name:
+
+            <div className={contactStyles.inputRow}>
+              <p>
+                <label htmlFor="first-name">
+                  First Name:
             <br />
-                <input className={contactStyles.input} id="last-name" type="text" name="Last Name" onChange={handleChange} placeholder="Last Name" />
+                  <input className={contactStyles.input} id="first-name" type="text" name="First Name" onChange={handleChange} placeholder="First Name" autocomplete="on" />
+                </label>
+              </p>
+              <div className={contactStyles.space}></div>
+              <p>
+                <label htmlFor="last-name">
+                  Last Name:
+            <br />
+                  <input className={contactStyles.input} id="last-name" type="text" name="Last Name" onChange={handleChange} placeholder="Last Name" />
+                </label>
+              </p>
+            </div>
+            <div className={contactStyles.inputRow}>
+              <p>
+                <label htmlFor="email">
+                  Your email:
+            <br />
+                  <input className={contactStyles.input} id="email" type="email" name="email" onChange={handleChange} placeholder="Email" required />
+                </label>
+              </p>
+              <div className={contactStyles.space}></div>
+              <p>
+                <label htmlFor="phone">
+                  Phone:
+            <br />
+                  <input className={contactStyles.input} id="phone" type="tel" name="Phone" onChange={handleChange} placeholder="Phone" />
+                </label>
+              </p>
+            </div>
+            <p>
+              What can we help you with?
+            <br />
+              <input type="checkbox" className={contactStyles.checkbox} id="newShopifyStore" name="interest" onChange={handleChange} value="New Shopify Store" /><label for="newShopifyStore" htmlFor="newShopifyStore">New Shopify Store</label><br />
+
+              <input type="checkbox" className={contactStyles.checkbox} id="shopifyMigration" name="interest" onChange={handleChange} value="Shopify Migration" /><label for="shopifyMigration" htmlFor="shopifyMigration">Migrate an existing ecommerce store to Shopify</label><br />
+
+              <input type="checkbox" className={contactStyles.checkbox} id="shopifyCustomizations" name="interest" onChange={handleChange} value="Shopify Tweaks and Customizations" /><label for="shopifyCustomizations" htmlFor="shopifyCustomizations">Shopify Tweaks and Customizations</label><br />
+
+              <input type="checkbox" className={contactStyles.checkbox} id="klavioSetup" name="interest" onChange={handleChange} value="Klaviyo Email Integration and Setup" /><label for="klavioSetup" htmlFor="klavioSetup">Klaviyo Email Integration and Setup</label>
+            </p>
+
+            <p>
+              <label htmlFor="website">
+                Website (if applicable):
+            <br />
+                <input className={contactStyles.input} id="website" type="url" name="Website" onChange={handleChange} placeholder="Website" />
               </label>
             </p>
-          </div>
-          <div className={contactStyles.inputRow}>
+
+
             <p>
-              <label htmlFor="email">
-                Your email:
+              <label htmlFor="message">
+                Message:
             <br />
-                <input className={contactStyles.input} id="email" type="email" name="email" onChange={handleChange} placeholder="Email" required />
+                <textarea className={contactStyles.input} id="message" name="message" onChange={handleChange} placeholder="Tell us a bit about yourself and your company." />
               </label>
             </p>
-            <div className={contactStyles.space}></div>
+
             <p>
-              <label htmlFor="phone">
-                Phone:
-            <br />
-                <input className={contactStyles.input} id="phone" type="tel" name="Phone" onChange={handleChange} placeholder="Phone" />
-              </label>
+              <button type="submit">Send</button>
             </p>
-          </div>
-          <p>
-            What can we help you with?
-            <br />
-            <input type="checkbox" className={contactStyles.checkbox} id="newShopifyStore" name="interest" onChange={handleChange} value="New Shopify Store" /><label for="newShopifyStore" htmlFor="newShopifyStore">New Shopify Store</label><br />
-
-            <input type="checkbox" className={contactStyles.checkbox} id="shopifyMigration" name="interest" onChange={handleChange} value="Shopify Migration" /><label for="shopifyMigration" htmlFor="shopifyMigration">Migrate an existing ecommerce store to Shopify</label><br />
-
-            <input type="checkbox" className={contactStyles.checkbox} id="shopifyCustomizations" name="interest" onChange={handleChange} value="Shopify Tweaks and Customizations" /><label for="shopifyCustomizations" htmlFor="shopifyCustomizations">Shopify Tweaks and Customizations</label><br />
-
-            <input type="checkbox" className={contactStyles.checkbox} id="klavioSetup" name="interest" onChange={handleChange} value="Klaviyo Email Integration and Setup" /><label for="klavioSetup" htmlFor="klavioSetup">Klaviyo Email Integration and Setup</label>
-          </p>
-
-          <p>
-            <label htmlFor="website">
-              Website (if applicable):
-            <br />
-              <input className={contactStyles.input} id="website" type="url" name="Website" onChange={handleChange} placeholder="Website" />
-            </label>
-          </p>
-
-
-          <p>
-            <label htmlFor="message">
-              Message:
-            <br />
-              <textarea className={contactStyles.input} id="message" name="message" onChange={handleChange} placeholder="Tell us a bit about yourself and your company." />
-            </label>
-          </p>
-
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-      </div>
+          </form>
+        </div>
+      </PageTransition>
     </Layout >
   )
 }

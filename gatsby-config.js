@@ -15,6 +15,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-v2-plugin-page-transitions',
+      options: {
+        transitionTime: 1000
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
