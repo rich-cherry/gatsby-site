@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Head from "../components/head"
+import PageTransition from 'gatsby-v2-plugin-page-transitions'
 
 export const query = graphql`
   query ($slug: String!) {
@@ -29,10 +30,12 @@ export default function Blog(props) {
 
   return (
     <Layout>
-      <Head title={props.data.contentfulBlogPost.title} />
-      <h1>{props.data.contentfulBlogPost.title}</h1>
-      <p>{props.data.contentfulBlogPost.publishedDate}</p>
-      {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+      <PageTransition>
+        <Head title={props.data.contentfulBlogPost.title} />
+        <h1>{props.data.contentfulBlogPost.title}</h1>
+        <p>{props.data.contentfulBlogPost.publishedDate}</p>
+        {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+      </PageTransition>
     </Layout>
-    )
+  )
 }

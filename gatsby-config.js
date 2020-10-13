@@ -14,6 +14,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-v2-plugin-page-transitions',
+      options: {
+        transitionTime: 1000
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
@@ -33,16 +39,16 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-        {
-          resolve: 'gatsby-remark-relative-images'
-        },
-        {
-          resolve: 'gatsby-remark-images',
-          options: {
-            maxWidth: 750,
-            linkImagesToOriginal: false
+          {
+            resolve: 'gatsby-remark-relative-images'
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false
+            }
           }
-        }
         ]
       }
     }
