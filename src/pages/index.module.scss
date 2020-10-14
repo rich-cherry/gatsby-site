@@ -1,0 +1,36 @@
+$light:#F9E7E7;
+$dark: #12191C;
+$blue: #e7f9f9;
+
+.animate-pop-in {
+    animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    opacity: 0;
+    color: $light;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    
+}
+
+.delay {
+    padding-top: 2vh;
+    h1 {
+        font-size: 5vmax;
+        animation-delay: .6s;
+    }
+    h2 {
+        font-size: 3vmax;
+        animation-delay: .8s;
+    }
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
