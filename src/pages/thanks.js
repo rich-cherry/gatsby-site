@@ -9,7 +9,9 @@ export default function IndexPage() {
         <Layout>
             <PageTransition>
                 <Head title="Thanks" />
-                <h2>Your Form Has Been Submitted!</h2>
+                <h1>Thanks for dropping a line!</h1>
+                <h2>I'll be in touch!</h2>
+
             </PageTransition>
         </Layout>
     )

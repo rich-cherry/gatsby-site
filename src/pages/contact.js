@@ -48,7 +48,9 @@ export default function Contact() {
             onSubmit={handleSubmit}
             className={contactStyles.form}
           >
-            <h1>Let's Talk</h1>
+            <div>
+              <h1>Let's Talk</h1>
+            </div>
             <input type="hidden" name="form-name" value="contact v5" />
             <p hidden>
               <label>
@@ -78,7 +80,7 @@ export default function Contact() {
                 <label htmlFor="email">
                   Your email:
             <br />
-                  <input className={contactStyles.input} id="email" type="email" name="email" onChange={handleChange} placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" required />
+                  <input className={contactStyles.input} id="email" type="email" name="email" onChange={handleChange} placeholder="Email" required />
                 </label>
               </p>
               <div className={contactStyles.space}></div>

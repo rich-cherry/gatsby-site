@@ -7,7 +7,6 @@ $blue: #e7f9f9;
     opacity: 0;
     color: $light;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    
 }
 
 .delay {
@@ -16,7 +15,7 @@ $blue: #e7f9f9;
         font-size: 5vmax;
         animation-delay: .6s;
     }
-    h2 {
+    h2, form {
         font-size: 3vmax;
         animation-delay: .8s;
     }

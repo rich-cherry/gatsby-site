@@ -6,12 +6,10 @@ $laptopWidth: 1024px;
 $tabletWidth: 768px;
 $mobileWidth: 480px;
 
-
-
 .container {
     display: flex;
     justify-content: center; 
-        h1 {
+        h2 {
             font-size: 2.5rem;
             margin-bottom: 3rem;
         }
@@ -38,7 +36,6 @@ $mobileWidth: 480px;
     display: flex;
     padding: 5px 15px;
     border: none;
-    border-radius: 10px;
 }
 
 .checkbox {
@@ -74,8 +71,8 @@ $mobileWidth: 480px;
         background: $button;
         cursor: pointer;
         border-style: none;
-        border-radius: 4px;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        border-radius: 2px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
       
         transition: all ease 0.3s;
     }
@@ -111,6 +108,7 @@ $mobileWidth: 480px;
         display: none;
     }
 }
+
 
 input:focus,
 textarea:focus,
