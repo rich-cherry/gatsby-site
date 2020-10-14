@@ -1,8 +1,9 @@
 import React from "react"
 import { navigate } from 'gatsby'
-import Layout from "../components/layout"
+import LayoutContact from "../components/layoutContact"
 import Head from "../components/head"
 import contactStyles from './contact.module.scss'
+import indexStyles from './index.module.scss'
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 
 function encode(data) {
@@ -34,11 +35,10 @@ export default function Contact() {
   }
 
   return (
-    <Layout>
-      <Head title="Contact" />
-      <PageTransition>
+    <PageTransition>
+      <LayoutContact>
+        <Head title="Contact" />
         <div className={contactStyles.container}>
-
           <form
             name="contact v5"
             method="post"
@@ -48,7 +48,9 @@ export default function Contact() {
             onSubmit={handleSubmit}
             className={contactStyles.form}
           >
-            <h1 className={contactStyles.container}>Contact</h1>
+            <div>
+              <h1>Let's Talk</h1>
+            </div>
             <input type="hidden" name="form-name" value="contact v5" />
             <p hidden>
               <label>
@@ -101,7 +103,6 @@ export default function Contact() {
 
               <input type="checkbox" className={contactStyles.checkbox} id="klavioSetup" name="interest" onChange={handleChange} value="Klaviyo Email Integration and Setup" /><label for="klavioSetup" htmlFor="klavioSetup">Klaviyo Email Integration and Setup</label>
             </p>
-
             <p>
               <label htmlFor="website">
                 Website (if applicable):
@@ -110,7 +111,6 @@ export default function Contact() {
               </label>
             </p>
 
-
             <p>
               <label htmlFor="message">
                 Message:
@@ -118,13 +118,12 @@ export default function Contact() {
                 <textarea className={contactStyles.input} id="message" name="message" onChange={handleChange} placeholder="Tell us a bit about yourself and your company." />
               </label>
             </p>
-
-            <p>
-              <button type="submit">Send</button>
-            </p>
+            <div className={contactStyles.button}>
+              <button type="submit" formnovalidate="formnovalidate">Send</button>
+            </div>
           </form>
         </div>
-      </PageTransition>
-    </Layout >
+      </LayoutContact>
+    </PageTransition>
   )
 }

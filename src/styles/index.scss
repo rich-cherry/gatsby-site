@@ -1,12 +1,11 @@
-$light: #F9E7E7;
+$light:#F9E7E7;
 $dark: #12191C;
 
 
 * {
-  background: $dark;
+  // background: $dark;
   color:$light;
 }
-
 
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
 
