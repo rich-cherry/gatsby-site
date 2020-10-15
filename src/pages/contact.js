@@ -3,7 +3,7 @@ import { navigate } from 'gatsby'
 import LayoutContact from "../components/layoutContact"
 import Head from "../components/head"
 import contactStyles from './contact.module.scss'
-import indexStyles from './index.module.scss'
+// import indexStyles from './index.module.scss'
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 
 function encode(data) {

@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import headerStyles from './header.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faSignInAlt } from '@fortawesome/free-solid-svg-icons'
+import { faGithubAlt, faShopify } from '@fortawesome/free-brands-svg-icons'
 
 
 export default function Header() {
@@ -21,9 +24,11 @@ export default function Header() {
       </h1>
       <nav>
         <ul className={headerStyles.navList}>
+          <li className={headerStyles.navItem}><FontAwesomeIcon icon={faShopify} /> Why Shopify?</li>
           <li><Link to="/about" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>About</Link></li>
           <li><Link to="/blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Blog</Link></li>
           <li><Link to="/contact" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Contact</Link></li>
+          <li className={headerStyles.navItem}>Client Login <FontAwesomeIcon icon={faSignInAlt} /></li>
         </ul>
       </nav>
     </header >

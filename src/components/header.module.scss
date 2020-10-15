@@ -1,5 +1,12 @@
 $light: #F9E7E7;
 $dark: #12191C;
+$lightpink: #F4D3D3;
+
+$button:#EA575C;
+$mediaMaxWidth: 1260px;
+$laptopWidth: 1024px;
+$tabletWidth: 768px;
+$mobileWidth: 480px;
 
 
 body {
@@ -15,11 +22,10 @@ body {
 }
 
 .logo {
-  font-family: rig-solid-bold-inline;
+  font-family: rig-solid-bold-inline, serif;
   font-size: 8vmax;
   transition: transform 1s;
-  color: white;
-
+  color: $light;
 }
 
 .logo:hover {
@@ -36,13 +42,12 @@ body {
   margin-right: 1.3rem;
   position: relative;
   padding: 15px 5px;
-  font-size: 1.7vmax;
+  font-size: 1.3vmax;
   font-weight: 500;
   text-decoration: none;
   display: inline-block;
   transition: all ease 0.3s;
 }
-
 
 .nav-item:after {
   background: none repeat scroll 0 0 transparent;
@@ -66,4 +71,13 @@ body {
 
 .active-nav-item {
   font-weight: bold;
+}
+
+@media (max-width: $tabletWidth) {
+  .nav-item {
+    font-size: 3vmax;
+  }
+  .logo {
+    font-size: 14vmax;
+  }
 }
