@@ -1,6 +1,5 @@
-$light: #F9E7E7;
+$light: #fde5e5;
 $dark: #12191C;
-$lightpink: #F4D3D3;
 
 $button:#EA575C;
 $mediaMaxWidth: 1260px;
@@ -11,7 +10,7 @@ $mobileWidth: 480px;
 .animate-pop-in {
     animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
     opacity: 0;
-    color: $lightpink;
+    color: $light;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
@@ -19,7 +18,7 @@ $mobileWidth: 480px;
     height: 60vh;
     padding-top: 2vh;
     h1 {
-        font-size: 5vmax;
+        font-size: 4.5vmax;
         animation-delay: .6s;
     }
     h2, form {
