@@ -1,10 +1,11 @@
 import React from "react"
 import { navigate } from 'gatsby'
-import LayoutContact from "../components/layoutContact"
+// import LayoutContact from "../components/layoutContact"
 import Head from "../components/head"
 import contactStyles from './contact.module.scss'
 // import indexStyles from './index.module.scss'
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
+import StyledBackgroundSection from "../components/layoutContact2"
 
 function encode(data) {
   return Object.keys(data)
@@ -36,7 +37,8 @@ export default function Contact() {
 
   return (
     <PageTransition>
-      <LayoutContact>
+      <StyledBackgroundSection>
+        {/* <LayoutContact> */}
         <Head title="Contact" />
         <div className={contactStyles.container}>
           <form
@@ -123,7 +125,8 @@ export default function Contact() {
             </div>
           </form>
         </div>
-      </LayoutContact>
+        {/* </LayoutContact> */}
+      </StyledBackgroundSection>
     </PageTransition>
   )
 }

@@ -1,6 +1,6 @@
 $light: #fde5e5;
 $dark: #12191C;
-
+$offwhite: #F8F8F8;
 $button:#EA575C;
 $mediaMaxWidth: 1260px;
 $laptopWidth: 1024px;
@@ -10,7 +10,7 @@ $mobileWidth: 480px;
 .animate-pop-in {
     animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
     opacity: 0;
-    color: $light;
+    color: $offwhite;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 

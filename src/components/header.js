@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import headerStyles from './header.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faSignInAlt } from '@fortawesome/free-solid-svg-icons'
+import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithubAlt, faShopify } from '@fortawesome/free-brands-svg-icons'
 
 

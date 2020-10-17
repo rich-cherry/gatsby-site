@@ -1,5 +1,6 @@
 $light: #F9E7E7;
 $dark: #12191C;
+$offwhite: #F8F8F8;
 $button:#EA575C;
 $mediaMaxWidth: 1260px;
 $laptopWidth: 1024px;
@@ -16,11 +17,10 @@ $mobileWidth: 480px;
 }
 
 .form {
+    color: $offwhite;
     font-size: 1.2rem;
     line-height: 2rem;
     width: 90%;
-    // background:rgba(18, 25, 28, 0.4);
-    // border: .3rem solid $light;
     border-radius: 25px;
     opacity: 0.9;
     padding: 0 4rem;
@@ -30,7 +30,7 @@ $mobileWidth: 480px;
 }
 
 .input {
-    background-color: $light;
+    background-color: $offwhite;
     color:$dark;
     width: 100%;
     display: flex;
