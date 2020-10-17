@@ -47,9 +47,20 @@ const LayoutContact2 = ({ className, ...props }) => (
 
 const StyledBackgroundSection = styled(LayoutContact2)`
   width: 100%;
-  background-position: left center;
+  
   background-repeat: repeat-y;
   background-size: cover;
+  background-color: transparent;
+  background-position: bottom left;
+
+    &::before,
+    &::after {
+        filter: invert(
+        ${({ isDarken }) => {
+        return isDarken ? '80%' : '0%'
+    }}
+        );
+    }
 `
 
 export default StyledBackgroundSection
