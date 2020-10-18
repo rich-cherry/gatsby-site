@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../layouts/layout"
 import Head from "../components/head"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import '../styles/index.scss'
@@ -12,14 +12,15 @@ export default function IndexPage() {
         <PageTransition>
           <div className={indexStyles.delay}>
             <Head title="Home" />
-            <h1 className={indexStyles.animatePopIn}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, possimus</h1>
-            <h2 className={indexStyles.animatePopIn}>Hola, konichiwa</h2>
+
+            <h1 className={indexStyles.animatePopIn}>I help eCommerce companies create compelling customer experiences that increase sales. </h1>
+            <h2 className={indexStyles.animatePopIn}>Need a developer?</h2>
+            <hr className={indexStyles.line} />
           </div>
         </PageTransition>
       </Layout>
       <div className={indexStyles.featureContent}>
-        <h1>Design &#10143; Build &#10144; Grow</h1>
-        <h1>Design &#9679; Build &#9675; Grow</h1>
+        <h1>Overview &#10143;</h1>
       </div>
     </div>
   )

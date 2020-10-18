@@ -49,10 +49,12 @@ body {
   position: relative;
   padding: 15px 5px;
   font-size: 1.3vmax;
-  font-weight: 500;
   text-decoration: none;
   display: inline-block;
   transition: all ease 0.5s;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .nav-item:after {
