@@ -18,7 +18,8 @@ export default function IndexPage() {
         </PageTransition>
       </Layout>
       <div className={indexStyles.featureContent}>
-
+        <h1>Design &#10143; Build &#10144; Grow</h1>
+        <h1>Design &#9679; Build &#9675; Grow</h1>
       </div>
     </div>
   )

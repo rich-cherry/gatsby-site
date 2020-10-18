@@ -8,8 +8,8 @@ import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
 const LayoutContact2 = ({ className, ...props }) => (
-    <StaticQuery
-        query={graphql`
+  <StaticQuery
+    query={graphql`
       query {
         desktop: file(relativePath: { eq: "images/workspace-desk2.jpg" }) {
           childImageSharp {
@@ -20,29 +20,29 @@ const LayoutContact2 = ({ className, ...props }) => (
         }
       }
     `}
-        render={data => {
-            // Set ImageData.
-            const imageData = data.desktop.childImageSharp.fluid
-            return (
-                <BackgroundImage
-                    Tag="section"
-                    className={className}
-                    fluid={imageData}
-                    backgroundColor={`#040e18`}
-                >
-                    <div className={layoutContactStyles.mainContainer}>
-                        <div className={layoutContactStyles.container}>
-                            <div className={layoutContactStyles.content}>
-                                <Header />
-                                {props.children}
-                            </div>
-                            <Footer />
-                        </div>
-                    </div >
-                </BackgroundImage>
-            )
-        }}
-    />
+    render={data => {
+      // Set ImageData.
+      const imageData = data.desktop.childImageSharp.fluid
+      return (
+        <BackgroundImage
+          Tag="section"
+          className={className}
+          fluid={imageData}
+          backgroundColor={`#040e18`}
+        >
+          <div className={layoutContactStyles.mainContainer}>
+            <div className={layoutContactStyles.container}>
+              <div className={layoutContactStyles.content}>
+                <Header />
+                {props.children}
+              </div>
+              <Footer />
+            </div>
+          </div >
+        </BackgroundImage>
+      )
+    }}
+  />
 )
 
 const StyledBackgroundSection = styled(LayoutContact2)`
@@ -57,8 +57,8 @@ const StyledBackgroundSection = styled(LayoutContact2)`
     &::after {
         filter: invert(
         ${({ isDarken }) => {
-        return isDarken ? '80%' : '0%'
-    }}
+    return isDarken ? '80%' : '0%'
+  }}
         );
     }
 `

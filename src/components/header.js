@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithubAlt, faShopify } from '@fortawesome/free-brands-svg-icons'
 
-
 export default function Header() {
   const data = useStaticQuery(graphql`
     query {
@@ -19,9 +18,9 @@ export default function Header() {
     `)
   return (
     <header className={headerStyles.header}>
-      <h1 className={headerStyles.logo} id="rc">
-        <Link to="/">{data.site.siteMetadata.logo}</Link>
-      </h1>
+      <Link to="/"><div className={headerStyles.logo} id="rc">
+        <h1>{data.site.siteMetadata.logo}</h1>
+      </div></Link>
       <nav>
         <ul className={headerStyles.navList}>
           <li className={headerStyles.navItem}><FontAwesomeIcon icon={faShopify} /> Why Shopify?</li>

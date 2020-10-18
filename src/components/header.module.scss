@@ -22,10 +22,16 @@ body {
 }
 
 .logo {
-  font-family: rig-solid-bold-inline, serif;
-  font-size: 8vmax;
   transition: transform 1s;
-  color: $light;
+  background: url(../images/rc-logo.svg) no-repeat;
+  background-size: 7vmax 7vmax;
+  display: block;
+  height: 7vmax;
+  width: 7vmax;
+  border-bottom: none;
+  h1 {
+    display: none;
+  }
 }
 
 .logo:hover {
@@ -46,7 +52,7 @@ body {
   font-weight: 500;
   text-decoration: none;
   display: inline-block;
-  transition: all ease 0.3s;
+  transition: all ease 0.5s;
 }
 
 .nav-item:after {
