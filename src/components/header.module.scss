@@ -1,12 +1,10 @@
 $light: #F9E7E7;
 $dark: #12191C;
 $gold: #AEA079;
-
 $mediaMaxWidth: 1260px;
 $laptopWidth: 1024px;
 $tabletWidth: 768px;
 $mobileWidth: 480px;
-
 
 body {
   background: $dark;
@@ -23,7 +21,7 @@ body {
 .logo {
   transition: transform 1s;
   background: url(../images/rc-logo.svg) no-repeat;
-  background-size: 7vmax 7vmax;
+  // background-size: 7vmax 7vmax;
   display: block;
   height: 7vmax;
   width: 7vmax;
@@ -44,7 +42,7 @@ body {
 }
 
 .nav-item {
-  margin-right: 1.3rem;
+  margin-left: 4vmax;
   position: relative;
   padding: 15px 5px;
   font-size: 1.3vmax;
@@ -85,11 +83,18 @@ body {
   color: $gold;
 }
 
+@media (max-width: $laptopWidth) {
+  .nav-item {
+    font-size: 2vmax;
+  }
+}
+
 @media (max-width: $tabletWidth) {
   .nav-item {
     font-size: 3vmax;
   }
   .logo {
-    font-size: 14vmax;
+    height: 10vmax;
+    width: 10vmax;
   }
 }

@@ -3,7 +3,8 @@ import { navigate } from 'gatsby'
 import Head from "../components/head"
 import contactStyles from './contact.module.scss'
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
-import StyledBackgroundSection from "../layouts/layoutContact2"
+import StyledBackgroundSection from "../layouts/layoutContact"
+import buttonStyles from "../components/button"
 
 function encode(data) {
   return Object.keys(data)
@@ -117,7 +118,7 @@ export default function Contact() {
                 <textarea className={contactStyles.input} id="message" name="message" onChange={handleChange} placeholder="Tell us a bit about yourself and your company." />
               </label>
             </p>
-            <div className={contactStyles.button}>
+            <div className={buttonStyles.buttonContainer}>
               <button type="submit" formnovalidate="formnovalidate">Send</button>
             </div>
           </form>

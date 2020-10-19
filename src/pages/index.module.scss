@@ -17,15 +17,15 @@ $mobileWidth: 480px;
 .hero {
     position: relative;
     top: 5vmax;
-    height: 100vh;
     max-width: 75%;
     h1 {
         font-size: 3vmax;
         animation-delay: .2s;
     }
     h2 {
-        font-size: 3vmax;
+        font-size: 2.5vmax;
         animation-delay: .4s;
+        margin: 4vmax 0;
     }
 }
 
@@ -68,16 +68,14 @@ hr {
 }
 
 @media (max-width: $tabletWidth) {
-    .delay {
-        position: static;
+    .hero {
         max-width: 95%;
     }
-    .delay h1 {
-        font-size: 5.5vmax;
-        line-height: 5.25vmax;
+    .hero h1 {
+        font-size: 5vmax;
     }
-    .delay h2 {
-        font-size: 4vmax;
+    .hero h2 {
+        font-size: 4.5vmax;
     }
     hr {
         display: none;

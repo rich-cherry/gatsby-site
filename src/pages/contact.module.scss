@@ -1,7 +1,7 @@
 $light: #F9E7E7;
 $dark: #12191C;
 $offwhite: #F8F8F8;
-$button:#EA575C;
+$gold: #AEA079;
 $mediaMaxWidth: 1260px;
 $laptopWidth: 1024px;
 $tabletWidth: 768px;
@@ -68,7 +68,7 @@ $mobileWidth: 480px;
         font-size: 1.3rem;
         padding: 1rem 0;
         margin-top: 2rem;
-        background: $button;
+        background: $gold;
         cursor: pointer;
         border-style: none;
         border-radius: 2px;
@@ -77,7 +77,7 @@ $mobileWidth: 480px;
     }
 
     button:hover {
-        background:#e74046; 
+        background:#gold; 
     }
 
     button:active {
@@ -87,6 +87,14 @@ $mobileWidth: 480px;
         outline: none;
         opacity: .5;
     }
+}
+
+input:focus {
+    outline: 5px solid $gold;
+}
+
+textarea:focus {
+    outline: 5px solid $gold;
 }
 
 @media (max-width: $mediaMaxWidth){
@@ -118,3 +126,10 @@ $mobileWidth: 480px;
     }
 }
 
+input[type='checkbox']:checked {
+    -webkit-filter: sepia(100%);
+}
+
+input[type='radio']:checked {
+    -webkit-filter: sepia(100%);
+}
