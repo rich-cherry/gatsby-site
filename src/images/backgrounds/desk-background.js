@@ -1,13 +1,10 @@
 import React from 'react'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import layoutContactStyles from './layoutContact.module.scss'
 import { graphql, StaticQuery } from 'gatsby'
+import backgroundStyles from './background.module.scss'
 import styled from 'styled-components'
-
 import BackgroundImage from 'gatsby-background-image'
 
-const LayoutContact2 = ({ className, ...props }) => (
+const Background = ({ className, ...props }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -15,13 +12,12 @@ const LayoutContact2 = ({ className, ...props }) => (
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
-            }
+            },
           }
         }
       }
     `}
     render={data => {
-      // Set ImageData.
       const imageData = data.desktop.childImageSharp.fluid
       return (
         <BackgroundImage
@@ -29,27 +25,26 @@ const LayoutContact2 = ({ className, ...props }) => (
           className={className}
           fluid={imageData}
           backgroundColor={`#040e18`}
+          fadeIn={"soft"}
+
         >
-          <div className={layoutContactStyles.mainContainer}>
-            <div className={layoutContactStyles.container}>
-              <Header />
-              {props.children}
-              <Footer />
-            </div>
+          <div className={backgroundStyles.container}>
+            {props.children}
           </div >
-        </BackgroundImage>
+        </BackgroundImage >
       )
     }}
   />
 )
 
-const StyledBackgroundSection = styled(LayoutContact2)`
+const DeskBackground = styled(Background)`
   width: 100%;
-  
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
   background-position: bottom left;
+  background-attachment: fixed;
+  
 
     &::before,
     &::after {
@@ -61,4 +56,4 @@ const StyledBackgroundSection = styled(LayoutContact2)`
     }
 `
 
-export default StyledBackgroundSection
+export default DeskBackground
