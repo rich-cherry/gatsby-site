@@ -73,7 +73,6 @@ $mobileWidth: 480px;
         border-style: none;
         border-radius: 2px;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-      
         transition: all ease 0.3s;
     }
 
@@ -83,6 +82,10 @@ $mobileWidth: 480px;
 
     button:active {
         transform: translateY(10px);
+    }
+    button:focus {
+        outline: none;
+        opacity: .5;
     }
 }
 
@@ -115,15 +118,3 @@ $mobileWidth: 480px;
     }
 }
 
-
-input:focus,
-textarea:focus,
-select:focus {
-    // outline: 3px outset #f55649;
-    // border-radius:0;
-}
-
-button:focus {
-    outline: none;
-    opacity: .5;
-}

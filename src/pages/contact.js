@@ -36,7 +36,6 @@ export default function Contact() {
   return (
     <PageTransition>
       <StyledBackgroundSection>
-        {/* <LayoutContact> */}
         <Head title="Contact" />
         <div className={contactStyles.container}>
           <form
@@ -123,7 +122,6 @@ export default function Contact() {
             </div>
           </form>
         </div>
-        {/* </LayoutContact> */}
       </StyledBackgroundSection>
     </PageTransition>
   )

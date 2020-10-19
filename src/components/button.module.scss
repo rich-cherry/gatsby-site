@@ -1,0 +1,69 @@
+$gold: #AEA079;
+$dark: #12191C;
+$tabletWidth: 768px;
+
+button {
+    border: 1.5px solid $gold;
+    background: none;
+    padding: .75vmax 2vmax;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: all 0.5s;
+    width: 250px;  
+  }
+
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+          visibility: hidden;
+      }
+
+      100% {
+          opacity: 1;
+          visibility: visible;
+      }
+  }
+
+button:nth-child(1) {
+    text-transform: uppercase;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: .9rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background: $gold;
+}
+
+button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\21D2';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media (max-width: $tabletWidth) {
+    button {
+        padding: 1.5vmax 2vmax;
+    }
+}

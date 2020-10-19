@@ -1,35 +1,31 @@
 $light: #fde5e5;
 $dark: #12191C;
 $offwhite: #F8F8F8;
-$button:#EA575C;
+$gold: #AEA079;
 $mediaMaxWidth: 1260px;
 $laptopWidth: 1024px;
 $tabletWidth: 768px;
 $mobileWidth: 480px;
 
 .animate-pop-in {
-    animation: pop-in 6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    animation: pop-in 4s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
     opacity: 0;
     color: $offwhite;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-.delay {
+.hero {
     position: relative;
     top: 5vmax;
-    height: 100%;
-    padding-top: 2vh;
+    height: 100vh;
     max-width: 75%;
-    
     h1 {
         font-size: 3vmax;
-        animation-delay: .6s;
-        
+        animation-delay: .2s;
     }
-    h2, form {
+    h2 {
         font-size: 3vmax;
-        animation-delay: .8s;
-
+        animation-delay: .4s;
     }
 }
 
@@ -45,7 +41,7 @@ $mobileWidth: 480px;
 }
 
 .feature-content {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     color: $dark;
     background-color: #fcf0ea;
@@ -62,15 +58,28 @@ hr {
     margin-left: 0;
 }
 
+@media (max-width: $laptopWidth) {
+    .delay h1 {
+        font-size: 4vmax;
+    }
+    .delay h2 {
+        font-size: 3vmax;
+    }
+}
+
 @media (max-width: $tabletWidth) {
     .delay {
         position: static;
         max-width: 95%;
     }
     .delay h1 {
-        font-size: 6vmax;
+        font-size: 5.5vmax;
+        line-height: 5.25vmax;
     }
     .delay h2 {
-        font-size: 5vmax;
+        font-size: 4vmax;
+    }
+    hr {
+        display: none;
     }
 }

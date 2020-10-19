@@ -1,8 +1,7 @@
 $light: #F9E7E7;
 $dark: #12191C;
-$lightpink: #F4D3D3;
+$gold: #AEA079;
 
-$button:#EA575C;
 $mediaMaxWidth: 1260px;
 $laptopWidth: 1024px;
 $tabletWidth: 768px;
@@ -53,8 +52,12 @@ body {
   display: inline-block;
   transition: all ease 0.5s;
   font-family: futura-pt, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
+}
+
+.nav-item:hover {
+  color: $gold;
 }
 
 .nav-item:after {
@@ -64,7 +67,7 @@ body {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: $light;
+  background: $gold;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -79,6 +82,7 @@ body {
 
 .active-nav-item {
   font-weight: bold;
+  color: $gold;
 }
 
 @media (max-width: $tabletWidth) {

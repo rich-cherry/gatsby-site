@@ -32,10 +32,10 @@ const LayoutContact2 = ({ className, ...props }) => (
         >
           <div className={layoutContactStyles.mainContainer}>
             <div className={layoutContactStyles.container}>
-              <div className={layoutContactStyles.content}>
-                <Header />
-                {props.children}
-              </div>
+
+              <Header />
+              {props.children}
+
               <Footer />
             </div>
           </div >

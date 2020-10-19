@@ -3,7 +3,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import headerStyles from './header.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
-import { faGithubAlt, faShopify } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faShopify, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Header() {
   const data = useStaticQuery(graphql`
@@ -28,6 +28,12 @@ export default function Header() {
           <li><Link to="/blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Blog</Link></li>
           <li><Link to="/contact" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Contact</Link></li>
           <li className={headerStyles.navItem}>Client Login <FontAwesomeIcon icon={faSignInAlt} /></li>
+          <li className={headerStyles.navItem}>
+            <a href="https://github.com/rich-cherry" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+          </li>
+          <li className={headerStyles.navItem}>
+            <a href="https://www.linkedin.com/in/rich-cherry/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+          </li>
         </ul>
       </nav>
     </header >
