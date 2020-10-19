@@ -26,10 +26,10 @@ export default function Header() {
           <li><Link to="/blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Blog</Link></li>
           <li><Link to="/contact" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Contact</Link></li>
           <li className={headerStyles.navItem}>
-            <a href="https://github.com/rich-cherry" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://github.com/rich-cherry" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FontAwesomeIcon icon={faGithub} /></a>
           </li>
           <li className={headerStyles.navItem}>
-            <a href="https://www.linkedin.com/in/rich-cherry/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="https://www.linkedin.com/in/rich-cherry/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FontAwesomeIcon icon={faLinkedin} /></a>
           </li>
         </ul>
       </nav>

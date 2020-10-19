@@ -2,9 +2,9 @@ import React from "react"
 import { navigate } from 'gatsby'
 import Head from "../components/head"
 import contactStyles from './contact.module.scss'
+import buttonStyles from "../components/button.module.scss"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import DeskBackground from "../images/backgrounds/desk-background"
-import buttonStyles from "../components/button"
 import Footer from "../components/footer"
 import Layout from "../layouts/layout"
 
@@ -125,7 +125,6 @@ export default function Contact() {
                 <button type="submit" formnovalidate="formnovalidate">Send</button>
               </div>
             </form>
-
           </div>
         </PageTransition>
         <Footer />

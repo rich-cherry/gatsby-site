@@ -67,3 +67,12 @@ button:hover span:after {
         padding: 1.5vmax 2vmax;
     }
 }
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+        width: 85%;
+    }
+}

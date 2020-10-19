@@ -9,6 +9,8 @@ export default function FooterLinks() {
         <ul className={footerStyles.links}>
             <li className={footerStyles.link}>Why Shopify? <FontAwesomeIcon icon={faShopify} /> </li>
             <li className={footerStyles.link}>Client Login <FontAwesomeIcon icon={faSignInAlt} /></li>
+            <li className={footerStyles.link}><FontAwesomeIcon icon={faGithub} /></li>
+            <li className={footerStyles.link}><FontAwesomeIcon icon={faLinkedin} /></li>
         </ul>
     )
 }
