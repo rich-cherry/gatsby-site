@@ -3,6 +3,7 @@ import Layout from "../layouts/layout"
 import Head from "../components/head"
 import Button from "../components/button"
 import Footer from "../components/footer"
+import Overview from "../components/overview"
 import FooterLinks from "../components/footer-links"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import '../styles/index.scss'
@@ -22,9 +23,7 @@ export default function IndexPage() {
           </div>
         </PageTransition>
       </Layout>
-      <div className={indexStyles.featureContent}>
-        <h1>Overview &#10143;</h1>
-      </div>
+      <Overview />
       <Footer>
         <FooterLinks />
       </Footer>
