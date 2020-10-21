@@ -1,0 +1,64 @@
+$light: #fde5e5;
+$dark: #12191C;
+$offwhite: #F8F8F8;
+$gold: #AEA079;
+$mediaMaxWidth: 1260px;
+$laptopWidth: 1024px;
+$tabletWidth: 768px;
+$mobileWidth: 480px;
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fcf0ea;
+    background-image: linear-gradient(135deg, #f8dbd7, #fff2e1);
+}
+
+.tech-partner-container {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    h1 {
+        color: $dark;
+        font-family: futura-pt, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        font-style: normal;
+        margin-top: 0;
+        letter-spacing: .3rem;
+        text-transform: uppercase;
+    }
+
+    hr {
+        border-color: $dark;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        color: $dark;
+        width: 11rem;
+    }
+}
+
+.tech-partner-grid {
+    width: 50%;
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    border-bottom: 1px solid $gold;
+    border-left: 1px solid $gold;
+}
+
+.tech-partner-grid > div {
+    color: $dark;
+    border-top: 1px solid $gold;
+    border-right: 1px solid $gold;
+    padding: 20px;
+    font-size: 150%;
+}

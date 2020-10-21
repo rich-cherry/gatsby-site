@@ -96,7 +96,7 @@ export default function Contact() {
                 </p>
               </div>
               <p>
-                What can we help you with?
+                What can I help you with?
             <br />
                 <input type="checkbox" className={contactStyles.checkbox} id="newShopifyStore" name="interest" onChange={handleChange} value="New Shopify Store" /><label for="newShopifyStore" htmlFor="newShopifyStore">New Shopify Store</label><br />
 

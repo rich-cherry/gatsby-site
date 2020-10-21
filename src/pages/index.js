@@ -3,7 +3,9 @@ import Layout from "../layouts/layout"
 import Head from "../components/head"
 import Button from "../components/button"
 import Footer from "../components/footer"
-import Overview from "../components/overview"
+import Overview from "../components/homepage-components/overview"
+import TechPartners from "../components/homepage-components/tech-partners"
+import Feature from "../components/homepage-components/feature"
 import FooterLinks from "../components/footer-links"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import '../styles/index.scss'
@@ -24,6 +26,8 @@ export default function IndexPage() {
         </PageTransition>
       </Layout>
       <Overview />
+      <Feature />
+      <TechPartners />
       <Footer>
         <FooterLinks />
       </Footer>

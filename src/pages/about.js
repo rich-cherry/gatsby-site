@@ -10,8 +10,7 @@ export default function About() {
         <PageTransition>
           <Head title="About" />
           <h1>About me</h1>
-          <p>This page will eventually have information about me.</p>
-          <p>Need a developer?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores repellat libero minima unde sequi ut neque aut quod suscipit, dolores voluptatem, aliquid nisi illo error sed sit hic ad id.</p>
         </PageTransition>
       </Layout>
     </div >

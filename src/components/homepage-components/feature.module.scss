@@ -1,0 +1,14 @@
+$light: #fde5e5;
+$dark: #12191C;
+$offwhite: #F8F8F8;
+$gold: #AEA079;
+$mediaMaxWidth: 1260px;
+$laptopWidth: 1024px;
+$tabletWidth: 768px;
+$mobileWidth: 480px;
+
+.container {
+    width: 100%;
+    height: 70vh;
+    background-color: $dark;
+}
