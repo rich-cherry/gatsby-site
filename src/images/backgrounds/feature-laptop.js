@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
-import backgroundStyles from './background.module.scss'
 import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
@@ -8,7 +7,7 @@ const Background = ({ className, ...props }) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "images/workspace-desk2.jpg" }) {
+        desktop: file(relativePath: { eq: "images/desktop4.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
@@ -24,25 +23,22 @@ const Background = ({ className, ...props }) => (
           Tag="section"
           className={className}
           fluid={imageData}
-          backgroundColor={`#040e18`}
+          // backgroundColor={`#040e18`}
           fadeIn={"soft"}
         >
-          <div className={backgroundStyles.container}>
-            {props.children}
-          </div >
+          {props.children}
         </BackgroundImage >
       )
     }}
   />
 )
 
-const DeskBackground = styled(Background)`
+const FeatureLaptop = styled(Background)`
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
-  background-position: bottom left;
-  background-attachment: fixed;
+  background-position: top;
   
 
     &::before,
@@ -55,4 +51,4 @@ const DeskBackground = styled(Background)`
     }
 `
 
-export default DeskBackground
+export default FeatureLaptop

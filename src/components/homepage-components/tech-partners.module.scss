@@ -62,7 +62,18 @@ $mobileWidth: 480px;
     border-top: 1px solid $gold;
     border-right: 1px solid $gold;
     padding: 20px;
-    font-size: 150%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: center;
+}
+
+.shopify {
+      background: url(../../images/shopify_monotone_black.svg) no-repeat;
+      width: 100px;
+      height: 50px;
 }
 
 

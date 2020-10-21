@@ -6,7 +6,7 @@ export default function Overview() {
         <div className={actionCallStyles.container}>
             <div className={actionCallStyles.overviewContainer}>
                 <div className={actionCallStyles.overviewText}
-                    data-sal="slide-up"
+                    data-sal="fade"
                     data-sal-duration="2000"
                     // data-sal-delay="1000"
                     data-sal-easing="ease">

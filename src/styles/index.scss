@@ -224,13 +224,13 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 
   /* Fade-in on load effect */
-  animation: fadeInAnimation ease 5s;
+  animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  -webkit-transition:background-color 5s ease;
-  -moz-transition:background-color 5s ease;
-  -o-transition:background-color 5s ease;
-  transition:background-color 5s ease;
+  -webkit-transition:background-color 3s ease;
+  -moz-transition:background-color 3s ease;
+  -o-transition:background-color 3s ease;
+  transition:background-color 3s ease;
 }
 
 @keyframes fadeInAnimation {
