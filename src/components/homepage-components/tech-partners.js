@@ -19,12 +19,12 @@ export default function TechPartners() {
                     data-sal-duration="2000"
                     // data-sal-delay="2000"
                     data-sal-easing="ease">
-                    <div className={techPartnerStyles.box}>A</div>
-                    <div className={techPartnerStyles.box}>B</div>
-                    <div className={techPartnerStyles.box}>C</div>
-                    <div className={techPartnerStyles.box}>D</div>
-                    <div className={techPartnerStyles.box}>E</div>
-                    <div className={techPartnerStyles.box}>F</div>
+                    <div className={techPartnerStyles.box}>Logo A</div>
+                    <div className={techPartnerStyles.box}>Logo B</div>
+                    <div className={techPartnerStyles.box}>Logo C</div>
+                    <div className={techPartnerStyles.box}>Logo D</div>
+                    <div className={techPartnerStyles.box}>Logo E</div>
+                    <div className={techPartnerStyles.box}>Logo F</div>
                 </div>
             </div>
 

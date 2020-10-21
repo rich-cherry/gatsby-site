@@ -5,11 +5,13 @@ import Button from "../components/button"
 import Footer from "../components/footer"
 import Overview from "../components/homepage-components/overview"
 import TechPartners from "../components/homepage-components/tech-partners"
+import ActionCall from "../components/homepage-components/action-call"
 import Feature from "../components/homepage-components/feature"
 import FooterLinks from "../components/footer-links"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import '../styles/index.scss'
 import indexStyles from './index.module.scss'
+
 
 export default function IndexPage() {
   return (
@@ -28,6 +30,8 @@ export default function IndexPage() {
       <Overview />
       <Feature />
       <TechPartners />
+      <Feature />
+      <ActionCall />
       <Footer>
         <FooterLinks />
       </Footer>

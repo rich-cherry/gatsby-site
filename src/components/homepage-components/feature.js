@@ -4,7 +4,7 @@ import featureStyles from './feature.module.scss'
 export default function Feature() {
     return (
         <div className={featureStyles.container}>
-            <p>YO!</p>
+            <h1>(picture)</h1>
         </div>
     )
 }
