@@ -21,6 +21,7 @@ $mobileWidth: 480px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     h1 {
         font-family: futura-pt, sans-serif;
         font-size: 1.5rem;
@@ -55,13 +56,10 @@ $mobileWidth: 480px;
 }
 
 .card-background {
-    
-    border: 2px solid $dark;
-    height: 50%;
     width: 60%;
     position: relative;
-    right: 65%;
-    top: 20%;
+    right: 60%;
+    top: 10%;
     p {
         color: $dark;
     }
