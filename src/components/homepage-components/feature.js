@@ -18,7 +18,7 @@ export default function Feature() {
                     data-sal-easing="ease">
                     <h1>Lorem ipsum</h1>
                     <hr />
-                    <p> dolor sit amet consectetur adipisicing elit.</p>
+                    <p> By the year 2021, worldwide retail ecommerce sales will reach $4.9 trillion.</p>
                 </div>
                 <div className={featureStyles.textContainer}
                     data-sal="fade"
@@ -34,9 +34,9 @@ export default function Feature() {
                     data-sal-duration="2000"
                     data-sal-delay="900"
                     data-sal-easing="ease">
-                    <h1>Lorem ipsum</h1>
-                    <hr />
-                    <p> dolor sit amet consectetur adipisicing elit.</p>
+                    <div className={featureStyles.textContainerBorder}>
+                        <h1>Hello</h1>
+                    </div>
                 </div>
             </div>
         </FeatureLaptop>

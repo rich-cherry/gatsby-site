@@ -10,35 +10,35 @@ export default function TechPartners(data) {
                 query {
                     shopify: file(relativePath: { eq: "images/brands/shopify_logo_black.png"}) {
                         childImageSharp {
-                            fixed(width: 125){
+                            fixed(width: 200){
                                 ...GatsbyImageSharpFixed
                             }
                         }
                     }  
                     klaviyo: file(relativePath: { eq: "images/brands/klaviyo.png"}) {
                         childImageSharp {
-                            fixed(width: 150){
-                                ...GatsbyImageSharpFixed
+                            fixed(width: 200){
+                                ...GatsbyImageSharpFixed_withWebp
                             }
                         }
                     }
                     zapier: file(relativePath: { eq: "images/brands/zapier.png"}) {
                         childImageSharp {
-                            fixed(width: 105){
+                            fixed(width: 130){
                                 ...GatsbyImageSharpFixed
                             }
                         }
                     }    
                     netlify: file(relativePath: { eq: "images/brands/netlify.png"}) {
                         childImageSharp {
-                            fixed(width: 125){
+                            fixed(width: 175){
                                 ...GatsbyImageSharpFixed
                             }
                         }
                     }
                     contentful: file(relativePath: { eq: "images/brands/contentful.png"}) {
                         childImageSharp {
-                            fixed(width: 155){
+                            fixed(width: 175){
                                 ...GatsbyImageSharpFixed
                             }
                         }
@@ -62,22 +62,26 @@ export default function TechPartners(data) {
                             data-sal-duration="2000"
                             // data-sal-delay="2000"
                             data-sal-easing="ease">
-                            <div className={techPartnerStyles.box}>
+                            <a href="https://www.shopify.com" target="_blank" rel="noreferrer noopener" alt="Klavio">
                                 <Img fixed={data.shopify.childImageSharp.fixed} />
-                            </div>
-                            <div className={techPartnerStyles.box}>
-                                <Img fixed={data.klaviyo.childImageSharp.fixed} />
-                            </div>
-                            <div className={techPartnerStyles.box}>
+                            </a>
+
+                            <a href="https://www.klaviyo.com/partner/signup?utm_source=0013o00002TrPtG&utm_medium=partner" target="_blank" rel="noreferrer noopener" alt="Klavio">
+                                <Img fixed={data.klaviyo.childImageSharp.fixed} alt="Klaviyo" />
+                            </a>
+
+                            <a href="https://zapier.com" target="_blank" rel="noreferrer noopener" alt="Zapier">
                                 <Img fixed={data.zapier.childImageSharp.fixed} />
-                            </div>
-                            <div className={techPartnerStyles.box}>Logo D</div>
-                            <div className={techPartnerStyles.box}>
+                            </a>
+                            <div>Logo D</div>
+                            <a href="https://www.netlify.com/" target="_blank" rel="noreferrer noopener" alt="Netlify">
                                 <Img fixed={data.netlify.childImageSharp.fixed} />
-                            </div>
-                            <div className={techPartnerStyles.box}>
+                            </a>
+
+
+                            <a href="https://www.contentful.com/" target="_blank" rel="noreferrer noopener" alt="Contentful">
                                 <Img fixed={data.contentful.childImageSharp.fixed} />
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div >
@@ -85,3 +89,4 @@ export default function TechPartners(data) {
         />
     )
 }
+

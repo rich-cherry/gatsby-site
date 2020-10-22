@@ -20,7 +20,7 @@ $mobileWidth: 480px;
 .text-container {
     border: 2px solid $gold;
     width: 250px;
-    padding: 20px 40px;
+    padding: 5px 5px;
     font-weight: 400;
     h1 {
         
@@ -30,3 +30,7 @@ $mobileWidth: 480px;
     }
 }        
     
+.textContainerBorder {
+    border: 1px solid $gold;
+    padding: 20px 10px;
+}
