@@ -8,9 +8,9 @@ export default function TechPartners(data) {
         <StaticQuery
             query={graphql`
                 query {
-                    shopify: file(relativePath: { eq: "images/brands/shopify_logo_black.png"}) {
+                    shopify: file(relativePath: { eq: "images/brands/shopify.png"}) {
                         childImageSharp {
-                            fixed(width: 200){
+                            fixed(width: 190){
                                 ...GatsbyImageSharpFixed
                             }
                         }
@@ -38,7 +38,7 @@ export default function TechPartners(data) {
                     }
                     contentful: file(relativePath: { eq: "images/brands/contentful.png"}) {
                         childImageSharp {
-                            fixed(width: 175){
+                            fixed(width: 185){
                                 ...GatsbyImageSharpFixed
                             }
                         }
