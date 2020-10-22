@@ -27,7 +27,7 @@ export default function Overview(data) {
                             data-sal-easing="ease">
                             <h1>overview</h1>
                             <hr />
-                            <p>Full-stack Developer with over six years' experience working within the Shopify platform, as well as building headless Shopify sites.</p>
+                            <p>US-based Full-stack Developer with over six years' experience working within the Shopify platform, as well as building headless Shopify sites.</p>
                         </div>
 
                         <div className={overviewStyles.card}
