@@ -3,7 +3,7 @@ import Layout from "../layouts/layout"
 import Head from "../components/head"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBootstrap, faCss3Alt, faFigma, faHtml5, faGit, faJs, faNodeJs, faReact, faSass, faShopify } from '@fortawesome/free-brands-svg-icons'
+import { faBootstrap, faCss3Alt, faFigma, faHtml5, faGithub, faJs, faNodeJs, faReact, faSass, faShopify } from '@fortawesome/free-brands-svg-icons'
 
 export default function About() {
   return (
@@ -13,13 +13,15 @@ export default function About() {
           <Head title="About" />
           <h1>About me</h1>
           <h3>Hi, I'm Rich -</h3>
-          <p>I'm a developer with 6+ years of experience in creating and managing eCommerce websites on Shopify, which includes everything from small tweaks and customization to building full headless sites from scratch.</p>
+          <p>I'm a developer with 6+ years of experience in creating and managing eCommerce websites on Shopify and Shopify Plus, which includes everything from small tweaks and customization to building full headless sites from scratch.</p>
           <p>Need help? Let's get together and build something great.</p>
+          <p>In case you're curious...</p>
+          <p>I most frequently work with:</p>
           <ul>
             <li>CSS3 <FontAwesomeIcon icon={faCss3Alt} /></li>
             <li>HTML5 <FontAwesomeIcon icon={faHtml5} /></li>
             <li>GatsbyJS <FontAwesomeIcon icon={faReact} /></li>
-            <li>Git <FontAwesomeIcon icon={faGit} /></li>
+            <li>Git <FontAwesomeIcon icon={faGithub} /></li>
             <li>GraphQL</li>
             <li>Javascript <FontAwesomeIcon icon={faJs} /></li>
             <li>NodeJS <FontAwesomeIcon icon={faNodeJs} /></li>
@@ -44,6 +46,7 @@ export default function About() {
             <li>Klaviyo</li>
             <li>Netlify</li>
             <li>Shopify <FontAwesomeIcon icon={faShopify} /></li>
+            <li>Whimsical</li>
             <li>Zapier</li>
           </ul>
           <p>Previous eCommerce experience has included:</p>
