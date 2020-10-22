@@ -44,4 +44,7 @@ $mobileWidth: 480px;
 .textContainerBorder {
     border: 1px solid $gold;
     padding: 20px 10px;
+    p {
+        margin: none;
+    }
 }
