@@ -5,5 +5,3 @@
 
 Thanks for visiting. This is my personal freelancing site, richcherry.io. This project was built using Gatsby JS.
 
-<!-- AUTO-GENERATED-CONTENT:END -->
-# gatsby-site
