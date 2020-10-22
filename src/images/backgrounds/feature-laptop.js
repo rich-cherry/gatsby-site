@@ -50,5 +50,4 @@ const FeatureLaptop = styled(Background)`
         );
     }
 `
-
 export default FeatureLaptop
