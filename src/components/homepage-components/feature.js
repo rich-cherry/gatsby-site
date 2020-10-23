@@ -46,21 +46,23 @@ export default function Feature({ className }) {
                     Tag="section"
                     className={className}
                     fluid={data.desktop.childImageSharp.fluid}
+                    // backgroundColor={`#040e18`}
                     fadeIn={"soft"}
                     style={{
                         width: '100%',
                         backgroundRepeat: 'no-repeat',
                         backgroundSize: 'cover',
-                        backgroundColor: 'transparent',
+                        // backgroundColor: 'transparent',
                         backgroundPosition: 'top',
                     }}
                 >
                     <div className={featureStyles.container}
                         data-sal="fade"
                         data-sal-duration="2000"
+                        // data-sal-delay="1000"
                         data-sal-easing="ease"
                     >
-                        <h1>Features</h1>
+                        <h1>Services</h1>
                         <div>
                             <div className={featureStyles.textContainer}
                                 data-sal="fade"

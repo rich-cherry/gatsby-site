@@ -9,7 +9,7 @@ $mobileWidth: 480px;
 
 .container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #fcf0ea;
     background-image: linear-gradient(135deg, #f8dbd7, #fff2e1);
 }
@@ -70,4 +70,11 @@ $mobileWidth: 480px;
 .card {
     position: relative;
     left: 20%;
+}
+
+
+@media (max-width: $tabletWidth) {
+    .container {
+        min-height: 100vh;
+    }
 }
