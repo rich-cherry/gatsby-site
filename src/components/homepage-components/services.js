@@ -1,12 +1,13 @@
 import React from 'react'
-import featureStyles from './feature.module.scss'
+import servicesStyles from './services.module.scss'
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChartLine, faSeedling } from '@fortawesome/free-solid-svg-icons'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
 
-export default function Feature({ className }) {
+
+export default function Services({ className }) {
     return (
         <StaticQuery
             query={graphql`
@@ -32,7 +33,7 @@ export default function Feature({ className }) {
                             }
                         }
                     } 
-                    desktop: file(relativePath: { eq: "images/desktop4.jpg" }) {
+                    desktop: file(relativePath: { eq: "images/work.jpg" }) {
                         childImageSharp {
                             fluid(quality: 90, maxWidth: 1920) {
                                 ...GatsbyImageSharpFluid_withWebp
@@ -55,43 +56,43 @@ export default function Feature({ className }) {
                         backgroundPosition: 'top',
                     }}
                 >
-                    <div className={featureStyles.container}
+                    <div className={servicesStyles.container}
                         data-sal="fade"
                         data-sal-duration="2000"
+                        // data-sal-delay="1000"
                         data-sal-easing="ease"
                     >
-                        <h1>Features</h1>
+                        <h1>Services</h1>
                         <div>
-                            <div className={featureStyles.textContainer}
+                            <div className={servicesStyles.textContainerBorder}
                                 data-sal="fade"
                                 data-sal-duration="2000"
                                 data-sal-delay="100"
                                 data-sal-easing="ease">
-                                <div className={featureStyles.textContainerBorder}>
+                                <div className={servicesStyles.textContainer}>
                                     <Img fixed={data.shopifyPlus.childImageSharp.fixed}
                                         alt="Shopify-Plus"
                                     />
-                                    <p> By the year 2021, worldwide retail ecommerce sales will reach $4.9 trillion.</p>
+                                    <p> By 2021, worldwide retail ecommerce sales will reach $4.9 trillion.(Price level)</p>
                                 </div>
                             </div>
-                            <div className={featureStyles.textContainer}
+                            <div className={servicesStyles.textContainerBorder}
                                 data-sal="fade"
                                 data-sal-duration="2000"
                                 data-sal-delay="500"
                                 data-sal-easing="ease">
-                                <div className={featureStyles.textContainerBorder}>
+                                <div className={servicesStyles.textContainer}>
                                     <Img fixed={data.klaviyo.childImageSharp.fixed} />
                                     <p>In terms on marketing, email remains one of the highest returns on investment you can make, with an estimated $38 in ROI for every dollar spent. I think Klaviyo is the best email marketing platform out there and as a Klaviyo advisor, I can get you set up so that your email is making you money.</p>
                                 </div>
                             </div>
-                            <div className={featureStyles.textContainer}
+                            <div className={servicesStyles.textContainerBorder}
                                 data-sal="fade"
                                 data-sal-duration="2000"
                                 data-sal-delay="900"
                                 data-sal-easing="ease">
-                                <div className={featureStyles.textContainerBorder}>
-                                    <h2><FontAwesomeIcon icon={faSeedling} /></h2>
-                                    <h2><FontAwesomeIcon icon={faChartLine} /></h2>
+                                <div className={servicesStyles.textContainer}>
+                                    <h2><FontAwesomeIcon icon={faCode} /></h2>
                                 </div>
                             </div>
                         </div>

@@ -8,13 +8,13 @@ $tabletWidth: 768px;
 $mobileWidth: 480px;
 
 .container {
-    background-image: linear-gradient(rgba(18, 25, 28, .9),
-    rgba(18, 25, 28, 1));
-    padding: 4rem;
+    width: 100%;
+    padding: 6rem 4rem;
+    background-image: linear-gradient(rgba(18, 25, 28, .5),
+            rgba(18, 25, 28, 1));
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    min-height: 100vh;
+
     h1 {
         align-self: flex-start;
         font-family: futura-pt, sans-serif;
@@ -26,21 +26,14 @@ $mobileWidth: 480px;
     }
 }
 
-.text-container {
+.text-container-border {
     border: 2px solid $gold;
     width: 800px;
     margin-bottom: 2rem;
-    padding: 3px 3px;
-    font-weight: 400;
-    h1 {
-        
-    }
-    hr {
-        margin: 2rem 0;
-    }
+    padding: 4px 4px;
 }        
     
-.textContainerBorder {
+.text-container {
     border: 1px solid $gold;
     padding: 20px 10px;
     p {
