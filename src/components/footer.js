@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import footerStyles from './footer.module.scss'
 
 export default function Footer(props) {
@@ -15,7 +15,7 @@ export default function Footer(props) {
   return (
     <div className={footerStyles.footer}>
       {props.children}
-      <p>Created by {data.site.siteMetadata.author}, © {new Date().getFullYear()}</p>
+      <Link to="/"><p>Created by {data.site.siteMetadata.author}, © {new Date().getFullYear()}</p></Link>
     </div>
   )
 }
