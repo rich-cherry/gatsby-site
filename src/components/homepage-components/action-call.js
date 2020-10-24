@@ -12,7 +12,7 @@ export default function Overview() {
                     data-sal-easing="ease">
                     <h1>(action-call)</h1>
                     <hr />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique libero nam pariatur in? Laborum dolores consequatur exercitationem quae nam quidem, veniam ut, molestias quo, labore laudantium dolorum illo. Asperiores, veniam?</p>
+                    <p>At the end of the day, the most important thing is to get up and running. In the tech world, there's a concept called MVP - Minimum Viable Product.</p>
                 </div>
 
                 <div className={actionCallStyles.card}
