@@ -34,45 +34,32 @@ export default function Overview({ className, data }) {
             render={data => (
                 <div className={overviewStyles.container}>
                     <div className={overviewStyles.overviewContainer}>
-                        <div className={overviewStyles.border}
-                            data-sal="slide-right"
-                            data-sal-duration="2000"
-                            // data-sal-delay="1000"
-                            data-sal-easing="ease"
-                        >
-                            <div className={overviewStyles.frame}>
-                                <div className={overviewStyles.text}>
-                                    <h1>overview</h1>
-                                    <hr />
-                                    <p>Full-stack Developer with over six years' experience working within the Shopify platform, as well as building headless Shopify sites.</p>
-                                </div>
-
-                                <div className={overviewStyles.card}
-                                    data-sal="slide-left"
-                                    data-sal-duration="2000"
-                                    // data-sal-delay="2000"
-                                    data-sal-easing="ease">
-                                    <BackgroundImage
-                                        Tag="section"
-                                        className={className}
-                                        fluid={data.desktop.childImageSharp.fluid}
-                                        fadeIn={"soft"}
-                                        style={{
-                                            width: '100%',
-                                            backgroundRepeat: 'no-repeat',
-                                            backgroundSize: 'cover',
-                                            backgroundColor: 'transparent',
-                                            backgroundPosition: 'top',
-                                        }} />
-
-                                </div>
-
-                            </div>
+                        <div>
+                            <h1> overview</h1>
+                            <hr />
+                            <p>Full-stack Developer with over six years' experience working within the Shopify platform, as well as building headless Shopify sites.</p>
                         </div>
 
+
                     </div>
-                </div>
-            )}
+                    <div className={overviewStyles.b}>
+
+                    </div>
+                    <div className={overviewStyles.c}>
+
+                    </div>
+                    <div className={overviewStyles.d}>
+
+                    </div>
+                    <div className={overviewStyles.e}>
+
+                    </div>
+                    <div className={overviewStyles.f}>
+
+                    </div>
+                </ div >
+            )
+            }
         />
     )
 }

@@ -5,9 +5,8 @@ $mobileWidth: 480px;
 
 .container {
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 90vh;
   width: 90%;
-  padding: 1rem;
 }
 
 @media (max-width: $tabletWidth) {
@@ -16,4 +15,3 @@ $mobileWidth: 480px;
     padding: 0.5rem;
   }
 }
-
