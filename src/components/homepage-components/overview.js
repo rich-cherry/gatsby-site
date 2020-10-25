@@ -37,7 +37,7 @@ export default function Overview({ className, data }) {
                         <div>
                             <h1> overview</h1>
                             <hr />
-                            <p>Full-stack Developer with over six years' experience working within the Shopify platform, as well as building headless Shopify sites.</p>
+                            <h3>Full-stack Shopify Developer based in the US with over six years of experience working within the Shopify platform, as well as building headless Shopify sites.</h3>
                         </div>
 
 

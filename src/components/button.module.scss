@@ -5,18 +5,12 @@ $tabletWidth: 768px;
 button {
     border: 1px solid $gold;
     background: none;
-    padding: .75vmax 2vmax;
+    padding: 1vmax 8vmax;
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transition: all 0.5s;
-    min-width: 238px;  
-  }
-
-  .button-border {
-      border: 2px solid $gold;
-      width: 250px;
-      padding: 4px 4px;
+    min-width: 275px;  
   }
 
   @keyframes fadeInAnimation {
@@ -36,7 +30,7 @@ button:nth-child(1) {
     font-family: futura-pt, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 button:hover {
