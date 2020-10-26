@@ -70,6 +70,15 @@ $mobileWidth: 480px;
 @media (max-width: $tabletWidth) {
     .container {
         padding: 4rem 1rem;
-        flex-wrap: wrap;
+    }
+    .content-container {
+        display: block;
+    }
+    .border {
+        border: none;
+        padding: 1rem 1rem;
+    }
+    .border:before {
+        border: none;
     }
 }
