@@ -38,14 +38,13 @@ export default function Overview({ className, data }) {
                             data-sal="slide-right"
                             data-sal-duration="2000"
                             // data-sal-delay="1000"
-                            data-sal-easing="ease"
-                        >
-                            <div className={overviewStyles.frame}>
-                                <div className={overviewStyles.text}>
-                                    <h1>overview</h1>
-                                    <hr />
-                                    <p>Full-stack Developer with over six years' experience working within the Shopify platform, as well as building headless Shopify sites.</p>
-                                </div>
+
+                            data-sal-easing="ease">
+                            <h1>overview</h1>
+                            <hr />
+                            <p>US-based Full-stack Developer with over six years' experience working within the Shopify platform, as well as building headless Shopify sites.</p>
+                        </div>
+
 
                                 <div className={overviewStyles.card}
                                     data-sal="slide-left"
