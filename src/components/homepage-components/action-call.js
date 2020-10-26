@@ -1,18 +1,35 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import actionCallStyles from './action-call.module.scss'
-import Button from '../button'
 
 export default function Overview() {
     return (
         <div className={actionCallStyles.container}>
-            <div className={actionCallStyles.overviewContainer}
-                data-sal="fade"
-                data-sal-duration="2000"
-                data-sal-delay="500"
-                data-sal-easing="ease">
-                <h1>Ready to start? Let's talk.</h1>
-                <Link to="/contact"><button className={actionCallStyles.button}><span>Get in touch</span></button></Link>
+            <div className={actionCallStyles.overviewContainer}>
+                <div className={actionCallStyles.overviewText}
+                    data-sal="fade"
+                    data-sal-duration="2000"
+                    // data-sal-delay="1000"
+                    data-sal-easing="ease">
+                    <h1>(action-call)</h1>
+                    <hr />
+                    <p>At the end of the day, the most important thing is to get up and running. In the tech world, there's a concept called MVP - Minimum Viable Product.</p>
+                </div>
+
+                <div className={actionCallStyles.card}
+                    data-sal="slide-down"
+                    data-sal-duration="2000"
+                    // data-sal-delay="2000"
+                    data-sal-easing="ease">
+                    <p>(picture)</p>
+                    <div className={actionCallStyles.cardBackground}
+                        data-sal="slide-right"
+                        data-sal-duration="2000"
+                        // data-sal-delay="1000"
+                        data-sal-easing="ease">
+                        <p>(picture)</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     )
