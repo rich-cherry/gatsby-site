@@ -31,6 +31,7 @@ $mobileWidth: 480px;
 }   
 
 .content-container {
+    margin: 2rem;
     display: flex;
     width: 85%;
         h1 {
@@ -39,7 +40,7 @@ $mobileWidth: 480px;
 }
     
 .text-container { 
-    margin: 2rem;
+    
     p {
         margin: .7rem 0;
         text-align: left;
