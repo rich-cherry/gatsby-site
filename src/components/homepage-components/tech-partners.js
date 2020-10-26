@@ -22,13 +22,6 @@ export default function TechPartners(data) {
                             }
                         }
                     }
-                    zapier: file(relativePath: { eq: "images/brands/zapier.png"}) {
-                        childImageSharp {
-                            fixed(width: 130){
-                                ...GatsbyImageSharpFixed
-                            }
-                        }
-                    }    
                     netlify: file(relativePath: { eq: "images/brands/netlify.png"}) {
                         childImageSharp {
                             fixed(width: 175){
@@ -55,7 +48,12 @@ export default function TechPartners(data) {
                             data-sal-easing="ease">
                             <h1>Tech Partners</h1>
                             <hr />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui temporibus quis voluptas totam unde, quae omnis architecto? Aliquid optio quis officia enim corrupti natus aut quod dignissimos magnam odit.</p>
+                            <div className={techPartnerStyles.partnerText}>
+                                <p><strong>Shopify:</strong> eCommerce Platform</p>
+                                <p><strong>Klaviyo:</strong> Marketing Automation</p>
+                                <p><strong>Netlify:</strong> Developer Platform</p>
+                                <p><strong>Contentful:</strong> Content Management</p>
+                            </div>
                         </div>
                         <div className={techPartnerStyles.techPartnerGrid}>
                             <a href="https://www.shopify.com" target="_blank"
@@ -67,7 +65,6 @@ export default function TechPartners(data) {
                             >
                                 <Img fixed={data.shopify.childImageSharp.fixed} />
                             </a>
-
                             <a href="https://www.klaviyo.com/partner/signup?utm_source=0013o00002TrPtG&utm_medium=partner"
                                 target="_blank"
                                 rel="noreferrer noopener"
@@ -79,19 +76,7 @@ export default function TechPartners(data) {
                                 <Img fixed={data.klaviyo.childImageSharp.fixed} />
 
                             </a>
-                            <a href="https://zapier.com" target="_blank" rel="noreferrer noopener" alt="Zapier"
-                                data-sal="fade"
-                                data-sal-duration="2000"
-                                data-sal-delay="600"
-                                data-sal-easing="ease">
-                                <Img fixed={data.zapier.childImageSharp.fixed} />
-                            </a>
-                            <a href="https://google.com"
-                                data-sal="fade"
-                                data-sal-duration="2000"
-                                data-sal-delay="400"
-                                data-sal-easing="ease"
-                            >Logo D</a>
+
                             <a href="https://www.netlify.com/" target="_blank" rel="noreferrer noopener" alt="Netlify"
                                 data-sal="fade"
                                 data-sal-duration="2000"
