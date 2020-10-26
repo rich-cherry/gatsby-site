@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import actionCallStyles from './action-call.module.scss'
-import Button from '../button'
 
 export default function Overview() {
     return (

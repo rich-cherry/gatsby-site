@@ -6,13 +6,16 @@ $tabletWidth: 768px;
 $mobileWidth: 480px;
 
 .container {
-    display: flex;
-    justify-content: center;
     width: 100%;
     padding: 6rem 4rem;
     background-image: linear-gradient(rgba(18, 25, 28, .5),
             rgba(18, 25, 28, 1));
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: no-wrap;
+
     h1 {
+        align-self: flex-start;
         font-family: futura-pt, sans-serif;
         font-size: 1.5rem;
         font-weight: 800;
@@ -20,47 +23,21 @@ $mobileWidth: 480px;
         letter-spacing: .3rem;
         text-transform: uppercase;
     }
-    hr {
-        margin-top: 4rem;
-        border-width: 0;
-        border-top: 2px solid #fff;
-        width: 40px;
-        text-align: left;
-        margin-left: 0;
-    }
-}   
-
-.content-container {
-    display: flex;
-    width: 85%;
-        h1 {
-            padding-right: 5rem;
-        }
-}
-    
-.text-container { 
-    margin: 2rem;
-    p {
-        margin: .7rem 0;
-        text-align: left;
-        font-size: 1.1rem;
-    }
 }
 
-.border {
-    padding: 2rem 2rem;
-    position: relative;
+.text-container-border {
     border: 2px solid $gold;
-}
-
-.border:before {
-    content: " ";
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    right: 3px;
-    bottom: 3px;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 4px 4px;
+}        
+    
+.text-container {
     border: 1px solid $gold;
+    padding: 20px 10px;
+    p {
+        margin: none;
+    }
 }
 
 @media (max-width: $tabletWidth) {
