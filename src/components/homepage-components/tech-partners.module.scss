@@ -8,8 +8,13 @@ $tabletWidth: 768px;
 $mobileWidth: 480px;
 
 .container {
+    width: 100%;
     background-color: #fcf0ea;
-    background-image: linear-gradient(135deg, #f8dbd7, #fff2e1);
+    background-image: url("../../images/partners.svg"),
+    linear-gradient(135deg, #f8dbd7, #fff2e1);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
 }
 
 .tech-partner-container {
@@ -48,7 +53,7 @@ $mobileWidth: 480px;
 }
 
 .tech-partner-grid {
-    padding: 6rem 4rem;
+    padding: 6rem 6rem;
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: repeat(2, 1fr);
@@ -60,7 +65,7 @@ $mobileWidth: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;
+    padding: 3rem 3rem;
 }
 
 .partner-text {

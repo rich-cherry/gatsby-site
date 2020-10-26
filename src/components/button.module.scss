@@ -2,7 +2,7 @@ $gold: #AEA079;
 $dark: #12191C;
 $tabletWidth: 768px;
 
-button {
+.button {
     border: 1px solid $gold;
     background: none;
     padding: 1vmax 8vmax;
@@ -25,26 +25,26 @@ button {
       }
   }
 
-button:nth-child(1) {
+.button:nth-child(1) {
     text-transform: uppercase;
     font-family: futura-pt, sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-size: 1rem;
 }
 
-button:hover {
+.button:hover {
     cursor: pointer;
     background: $gold;
 }
 
-button span {
+.button span {
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-button span:after {
+.button span:after {
     content: '\21D2';
     position: absolute;
     opacity: 0;
@@ -53,17 +53,17 @@ button span:after {
     transition: 0.5s;
 }
 
-button:hover span {
+.button:hover span {
     padding-right: 25px;
 }
 
-button:hover span:after {
+.button:hover span:after {
     opacity: 1;
     right: 0;
 }
 
 @media (max-width: $tabletWidth) {
-    button {
+    .button {
         padding: 1.5vmax 2vmax;
     }
 }
@@ -72,7 +72,7 @@ button:hover span:after {
     width: 100%;
     display: flex;
     justify-content: center;
-    button {
+    .button {
         width: 85%;
     }
 }

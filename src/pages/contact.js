@@ -120,7 +120,7 @@ export default function Contact() {
               </label>
             </p>
             <div className={buttonStyles.buttonContainer}>
-              <button type="submit" formnovalidate="formnovalidate">Send</button>
+              <button className={buttonStyles.button} type="submit" formnovalidate="formnovalidate">Send</button>
             </div>
           </form>
         </div>

@@ -10,69 +10,92 @@ $mobileWidth: 480px;
 .container {
     width: 100%;
     background-color: #AEA079;
-    background-image: url("../../images/contact.svg");
-    background-repeat: no-repeat;
-    background-position: left;
+    // background-image: url("../../images/contact.svg");
+    // background-repeat: no-repeat;
+    // background-position: left;
 }
 
 .overview-container {
     margin: 0 auto;
+    padding: 8rem 1rem;
     width: 90%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+
     h1 {
+        color: $dark;
         font-family: futura-pt, sans-serif;
         font-size: 1.5rem;
-        font-weight: 400;
+        font-weight: 700;
         font-style: normal;
-        margin-top: 0;
-        letter-spacing: .3rem;
+        margin: 0;
+        letter-spacing: .5rem;
         text-transform: uppercase;
     }
+}
 
-    hr {
-        border-color: $dark;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+.button {
+   
+   
+    padding: 1rem 5rem;
+    margin-left: 3rem;
+}
+
+
+.button {
+    border: 2px solid $dark;
+    background: none;
+    padding: 1vmax 8vmax;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: all 0.5s;
+    min-width: 275px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
     }
 
-    p {
-        color: $dark;
-        width: 11rem;
+    100% {
+        opacity: 1;
+        visibility: visible;
     }
 }
 
-.overview-text {
-    color: $dark;
-    height: 60%;
+.button:nth-child(1) {
+    text-transform: uppercase;
 }
 
-.card {
-    display: flex;
-    color: $dark;
-    border: 2px solid $dark;
-    height: 50%;
-    width: 40%;
+.button:hover {
+    cursor: pointer;
+    background: $dark;
 }
 
-.card-background {
-    border: 2px solid $dark;
-    height: 50%;
-    width: 60%;
+.button span {
+    display: inline-block;
     position: relative;
-    right: 65%;
-    top: 20%;
-
-    p {
-        color: $dark;
-    }
+    transition: 0.5s;
 }
 
-@media (max-width: $tabletWidth) {
-    .container {
-        flex-wrap: wrap;
-        padding: 4rem 1rem;
-    }
+.button span:after {
+    content: '\21D2';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
