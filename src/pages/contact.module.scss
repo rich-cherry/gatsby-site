@@ -10,6 +10,10 @@ $mobileWidth: 480px;
 .container {
     display: flex;
     justify-content: center; 
+    p {
+        font-weight: 300;
+        font-style: normal;
+    }
 }
 
 .form {
@@ -21,8 +25,9 @@ $mobileWidth: 480px;
     opacity: 0.9;
     padding: 0 4rem;
     h1 {
-        font-size: 2.5rem;
-        font-weight: 400;
+        font-size: 3rem;
+        font-weight: 300;
+        font-style: normal;
     }
     textarea {
         height: 8rem;

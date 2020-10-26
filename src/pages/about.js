@@ -51,7 +51,7 @@ export default function About(data) {
               >
                 <h1>About</h1>
                 <hr />
-                <p>I'm a developer with 6+ years of experience creating and managing eCommerce websites on Shopify and Shopify Plus, including everything from small theme tweaks and customizations to full, headless, custom-built sites from scratch.</p>
+                <p>I'm Rich - I'm a developer with 6+ years of experience creating and managing eCommerce websites on Shopify and Shopify Plus, including everything from small theme tweaks and customizations to full, headless, custom-built sites from scratch.</p>
                 <Link to="/contact"><h3>Need help? Let's get together and build something great.</h3></Link>
               </div>
               <div className={aboutStyles.stack1}

@@ -1,65 +1,53 @@
 import React from 'react'
 import overviewStyles from './overview.module.scss'
-import { graphql, StaticQuery } from "gatsby"
-import BackgroundImage from 'gatsby-background-image'
+import TerminalSvg from '../../images/icons/terminal-solid.svg'
+import ChartSvg from '../../images/icons/chart.svg'
+import CodeSvg from '../../images/icons/code.svg'
+import BrushSvg from '../../images/icons/brush-solid.svg'
 
-export default function Overview({ className, data }) {
+const Terminal = () => <><img src={TerminalSvg} style={{ width: "50px" }} /></>
+const Chart = () => <><img src={ChartSvg} style={{ width: "50px" }} /></>
+const Code = () => <><img src={CodeSvg} style={{ width: "50px" }} /></>
+const Brush = () => <><img src={BrushSvg} style={{ width: "50px" }} /></>
+
+export default function Overview() {
     return (
-        <StaticQuery
-            query={graphql`
-                query {
-                    desktop: file(relativePath: { eq: "images/desktop6.jpg"}) {
-                        childImageSharp {
-                            fixed(width: 600){
-                                ...GatsbyImageSharpFixed
-                            }
-                        }
-                    }  
-                    peony: file(relativePath: { eq: "images/peony.jpg"}) {
-                        childImageSharp {
-                            fixed(width: 400){
-                                ...GatsbyImageSharpFixed
-                            }
-                        }
-                    }
-                    desktop2: file(relativePath: { eq: "images/desktop4.jpg" }) {
-                        childImageSharp {
-                            fluid(quality: 90, maxWidth: 1920) {
-                                ...GatsbyImageSharpFluid_withWebp
-                            },
-                        }
-                    }  
-                }
-            `}
-            render={data => (
-                <div className={overviewStyles.container}>
-                    <div className={overviewStyles.overviewContainer}>
-                        <div>
-                            <h1> overview</h1>
-                            <hr />
-                            <h3>Full-stack Shopify Developer based in the US with over six years of experience working within the Shopify platform, as well as building headless Shopify sites.</h3>
-                        </div>
-
-
-                    </div>
-                    <div className={overviewStyles.b}>
-
-                    </div>
-                    <div className={overviewStyles.c}>
-
-                    </div>
-                    <div className={overviewStyles.d}>
-
-                    </div>
-                    <div className={overviewStyles.e}>
-
-                    </div>
-                    <div className={overviewStyles.f}>
-
-                    </div>
-                </ div >
-            )
-            }
-        />
+        <div className={overviewStyles.container}>
+            <div className={overviewStyles.a}>
+                <div>
+                    <h1> overview</h1>
+                    <hr />
+                </div>
+            </div>
+            <div className={overviewStyles.b}>
+                <h3>Full-stack Shopify Developer based in the US with over six years of experience working within the Shopify platform, as well as building headless Shopify sites.</h3>
+            </div>
+            <div className={overviewStyles.c}>
+                <div className={overviewStyles.flex}>
+                    <Brush />
+                    <h3>UX / UI Design</h3>
+                </div>
+            </div>
+            <div className={overviewStyles.d}>
+                <div className={overviewStyles.flex}>
+                    <Terminal />
+                    <h3>Shopify Design & Build</h3>
+                </div>
+            </div>
+            <div className={overviewStyles.e}>
+                <div className={overviewStyles.flex}>
+                    <Code />
+                    <h3>Attention to Detail</h3>
+                </div>
+            </div>
+            <div className={overviewStyles.f}>
+                <div className={overviewStyles.flex}>
+                    <Chart />
+                    <h3>Growth Oriented</h3>
+                </div>
+            </div>
+        </ div >
     )
+
+
 }

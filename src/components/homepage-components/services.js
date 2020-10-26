@@ -3,8 +3,6 @@ import servicesStyles from './services.module.scss'
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Services({ className }) {
@@ -73,7 +71,8 @@ export default function Services({ className }) {
                                     <Img fixed={data.shopifyPlus.childImageSharp.fixed}
                                         alt="Shopify-Plus"
                                     />
-                                    <p> By 2021, worldwide retail ecommerce sales will reach $4.9 trillion.(Price level)</p>
+                                    <p>Shopify is a global eCommerce platform, servicing small business, billion dollar business, and everything in between.
+                                        By 2021, worldwide retail ecommerce sales will reach $4.9 trillion.(Price level)</p>
                                 </div>
                             </div>
                             <div className={servicesStyles.textContainerBorder}
@@ -82,17 +81,8 @@ export default function Services({ className }) {
                                 data-sal-delay="500"
                                 data-sal-easing="ease">
                                 <div className={servicesStyles.textContainer}>
-                                    <Img fixed={data.klaviyo.childImageSharp.fixed} />
+                                    <span><Img fixed={data.klaviyo.childImageSharp.fixed} /></span>
                                     <p>In terms on marketing, email remains one of the highest returns on investment you can make, with an estimated $38 in ROI for every dollar spent. I think Klaviyo is the best email marketing platform out there and as a Klaviyo advisor, I can get you set up so that your email is making you money.</p>
-                                </div>
-                            </div>
-                            <div className={servicesStyles.textContainerBorder}
-                                data-sal="fade"
-                                data-sal-duration="2000"
-                                data-sal-delay="900"
-                                data-sal-easing="ease">
-                                <div className={servicesStyles.textContainer}>
-                                    <h2><FontAwesomeIcon icon={faCode} /></h2>
                                 </div>
                             </div>
                         </div>
