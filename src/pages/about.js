@@ -1,9 +1,8 @@
 import React from "react"
-import { Link, graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../layouts/layout"
 import Head from "../components/head"
-import Footer from "../components/footer"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBootstrap, faCss3Alt, faFigma, faHtml5, faGithub, faJs, faNodeJs, faReact, faSass, faShopify } from '@fortawesome/free-brands-svg-icons'
@@ -15,10 +14,10 @@ export default function About(data) {
     <StaticQuery
       query={graphql`
                 query {
-                    rc: file(relativePath: { eq: "images/rc_color.png"}) {
+                    rc: file(relativePath: { eq: "images/rc-black-white.png"}) {
                         childImageSharp {
-                            fluid(quality: 100){
-                                ...GatsbyImageSharpFluid
+                            fixed(width: 300, quality: 100){
+                                ...GatsbyImageSharpFixed
                             }
                         }
                     }      
@@ -28,40 +27,14 @@ export default function About(data) {
         <Layout>
           <PageTransition>
             <Head title="About" />
-            <div className={aboutStyles.wrapper}>
-              <div className={aboutStyles.photo}
-                data-sal="slide-up"
-                data-sal-duration="2000"
-                // data-sal-delay="1000"
-                data-sal-easing="ease"
-              >
-
-                <Img fixed={data.rc.childImageSharp.fluid}
-                  style={{
-                    width: "100%",
-                    height: "100%"
-                  }} />
-
-              </div>
-              <div className={aboutStyles.intro}
-                data-sal="slide-left"
-                data-sal-duration="2000"
-                // data-sal-delay="1000"
-                data-sal-easing="ease"
-              >
-                <h1>About</h1>
-                <hr />
-                <p>I'm Rich - I'm a developer with 6+ years of experience creating and managing eCommerce websites on Shopify and Shopify Plus, including everything from small theme tweaks and customizations to full, headless, custom-built sites from scratch.</p>
-                <Link to="/contact"><h3>Need help? Let's get together and build something great.</h3></Link>
-              </div>
-              <div className={aboutStyles.stack1}
-                data-sal="slide-right"
-                data-sal-duration="2000"
-                // data-sal-delay="1000"
-                data-sal-easing="ease"
-              >
-                <div className={aboutStyles.border}>
-                  <h4>I most frequently work with:</h4>
+            <div className={aboutStyles.container}>
+              <div>
+                <h1>About me</h1>
+                <h3>Hi, I'm Rich -</h3>
+                <p>I'm a developer with 6+ years of experience creating and managing eCommerce websites on Shopify and Shopify Plus, which includes everything from small theme tweaks and customizations to full, headless, custom-built sites from scratch.</p>
+                <p>Need help? Let's get together and build something great.</p>
+                <div>
+                  <p>I most frequently work with:</p>
                   <ul>
                     <li>CSS3 <FontAwesomeIcon icon={faCss3Alt} /></li>
                     <li>HTML5 <FontAwesomeIcon icon={faHtml5} /></li>
@@ -75,39 +48,23 @@ export default function About(data) {
                     <li>Sass <FontAwesomeIcon icon={faSass} /></li>
                   </ul>
                 </div>
-              </div>
-              <div className={aboutStyles.stack2}
-                data-sal="slide-down"
-                data-sal-duration="2000"
-                // data-sal-delay="1000"
-                data-sal-easing="ease"
-              >
-                <div className={aboutStyles.border}>
-                  <h4>Proficient with:</h4>
+                <div>
+                  <p>I occasionally work with:</p>
                   <ul>
                     <li>Adobe Illustrator</li>
                     <li>Adobe Photoshop</li>
                     <li>Bootstrap <FontAwesomeIcon icon={faBootstrap} /></li>
+                    <li>Figma <FontAwesomeIcon icon={faFigma} /></li>
                     <li>Ruby <FontAwesomeIcon /></li>
                     <li>Ruby on Rails</li>
-                    <li>Shogun</li>
                     <li>SketchUp</li>
                     <li>SQL</li>
                   </ul>
                 </div>
-              </div>
-
-              <div className={aboutStyles.stack3}
-                data-sal="slide-left"
-                data-sal-duration="2000"
-                // data-sal-delay="1000"
-                data-sal-easing="ease"
-              >
-                <div className={aboutStyles.border}>
-                  <h4>Favorite Platforms & Tools</h4>
+                <div>
+                  <p>Favorite CMS / eCommerce / Hosting Platforms & Tools:</p>
                   <ul>
                     <li>Contenful</li>
-                    <li>Figma <FontAwesomeIcon icon={faFigma} /></li>
                     <li>Klaviyo</li>
                     <li>Netlify</li>
                     <li>Shopify <FontAwesomeIcon icon={faShopify} /></li>
@@ -115,85 +72,43 @@ export default function About(data) {
                     <li>Zapier</li>
                   </ul>
                 </div>
-              </div>
-
-              {/* <div className={aboutStyles.experience}>
-                <div className={aboutStyles.border}>
-
+                <div>
+                  <p>Previous eCommerce work has included:</p>
                   <ul>
+                    <li>Accounting Integration</li>
                     <li>Custom User Features</li>
                     <li>Inventory Management</li>
-                    <li>Product Creation and Copy</li>
-                    <li>Shopify Launchpad</li>
-                    <li>Shopify Scripts</li>
+                    <li>Marketing
+             <ul>
+                        <li>Klaviyo</li>
+                        <li>Constant Contact</li>
+                        <li>Google Analytics Integration</li>
+                        <li>Product Creation and Copy</li>
+                        <li>Shogun</li>
+                        <li>Shopify Launchpad</li>
+                        <li>Shopify Scripts</li>
+                      </ul>
+                    </li>
                     <li>Migration from other platforms</li>
                     <li>Theme Design and Development</li>
-                    <li>Transportation Management & Fulfillment (Ground / LTL)</li>
+                    <li>Transportation Management & Fulfillment
+             <ul>
+                        <li>Ground</li>
+                        <li>LTL</li>
+                      </ul>
+                    </li>
                     <li>UX / UI Optimization</li>
                   </ul>
                 </div>
-              </div> */}
+              </div>
+
+
+              <Img fixed={data.rc.childImageSharp.fixed} />
 
             </div>
-            <Footer />
-
-
-
-            {/* <div className={aboutStyles.wrapper}>
-
-
-              <div className={aboutStyles.a}>
-                
-              
-           
-              <div className={aboutStyles.d}>
-                <p>Favorite CMS / eCommerce / Hosting Platforms & Tools:</p>
-                <ul>
-                  <li>Contenful</li>
-                  <li>Klaviyo</li>
-                  <li>Netlify</li>
-                  <li>Shopify <FontAwesomeIcon icon={faShopify} /></li>
-                  <li>Whimsical</li>
-                  <li>Zapier</li>
-                </ul>
-              </div>
-              <div className={aboutStyles.e}>
-                <p>Previous eCommerce work has included:</p>
-                <ul>
-                  <li>Accounting Integration</li>
-                  <li>Custom User Features</li>
-                  <li>Inventory Management</li>
-                  <li>Marketing
-                      <ul>
-                      <li>Klaviyo</li>
-                      <li>Constant Contact</li>
-                      <li>Google Analytics Integration</li>
-                      <li>Product Creation and Copy</li>
-                      <li>Shogun</li>
-                      <li>Shopify Launchpad</li>
-                      <li>Shopify Scripts</li>
-                    </ul>
-                  </li>
-                  <li>Migration from other platforms</li>
-                  <li>Theme Design and Development</li>
-                  <li>Transportation Management & Fulfillment
-                      <ul>
-                      <li>Ground</li>
-                      <li>LTL</li>
-                    </ul>
-                  </li>
-                  <li>UX / UI Optimization</li>
-                </ul>
-              </div>
-
-              <div className={aboutStyles.f}>
-                <Img fixed={data.rc.childImageSharp.fixed} />
-              </div>
-            </div> */}
-          </ PageTransition>
+          </PageTransition>
         </ Layout>
-      )
-      }
+      )}
     />
   )
 }

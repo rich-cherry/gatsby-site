@@ -1,63 +1,78 @@
 import React from 'react'
 import overviewStyles from './overview.module.scss'
-// import TerminalSvg from '../../images/icons/terminal-solid.svg'
-// import ChartSvg from '../../images/icons/chart.svg'
-// import CodeSvg from '../../images/icons/code.svg'
-// import BrushSvg from '../../images/icons/brush-solid.svg'
+import { graphql, StaticQuery } from "gatsby"
+import BackgroundImage from 'gatsby-background-image'
 
-// const Terminal = () => <><img src={TerminalSvg} style={{ width: "7%" }} /></>
-// const Chart = () => <><img src={ChartSvg} style={{ width: "7%" }} /></>
-// const Code = () => <><img src={CodeSvg} style={{ width: "7%" }} /></>
-// const Brush = () => <><img src={BrushSvg} style={{ width: "7%" }} /></>
-
-export default function Overview() {
+export default function Overview({ className, data }) {
     return (
-        <div className={overviewStyles.container}>
-            <div className={overviewStyles.a}
-                data-sal="fade"
-                data-sal-duration="2000"
-                // data-sal-delay="300"
-                data-sal-easing="ease">
-                <div>
-                    <h1> overview</h1>
-                    <hr />
+        <StaticQuery
+            query={graphql`
+                query {
+                    desktop: file(relativePath: { eq: "images/desktop6.jpg"}) {
+                        childImageSharp {
+                            fixed(width: 600){
+                                ...GatsbyImageSharpFixed
+                            }
+                        }
+                    }  
+                    peony: file(relativePath: { eq: "images/peony.jpg"}) {
+                        childImageSharp {
+                            fixed(width: 400){
+                                ...GatsbyImageSharpFixed
+                            }
+                        }
+                    }
+                    desktop2: file(relativePath: { eq: "images/desktop4.jpg" }) {
+                        childImageSharp {
+                            fluid(quality: 90, maxWidth: 1920) {
+                                ...GatsbyImageSharpFluid_withWebp
+                            },
+                        }
+                    }  
+                }
+            `}
+            render={data => (
+                <div className={overviewStyles.container}>
+                    <div className={overviewStyles.overviewContainer}>
+                        <div className={overviewStyles.border}
+                            data-sal="slide-right"
+                            data-sal-duration="2000"
+                            // data-sal-delay="1000"
+                            data-sal-easing="ease"
+                        >
+                            <div className={overviewStyles.frame}>
+                                <div className={overviewStyles.text}>
+                                    <h1>overview</h1>
+                                    <hr />
+                                    <p>Full-stack Developer with over six years' experience working within the Shopify platform, as well as building headless Shopify sites.</p>
+                                </div>
+
+                                <div className={overviewStyles.card}
+                                    data-sal="slide-left"
+                                    data-sal-duration="2000"
+                                    // data-sal-delay="2000"
+                                    data-sal-easing="ease">
+                                    <BackgroundImage
+                                        Tag="section"
+                                        className={className}
+                                        fluid={data.desktop.childImageSharp.fluid}
+                                        fadeIn={"soft"}
+                                        style={{
+                                            width: '100%',
+                                            backgroundRepeat: 'no-repeat',
+                                            backgroundSize: 'cover',
+                                            backgroundColor: 'transparent',
+                                            backgroundPosition: 'top',
+                                        }} />
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div className={overviewStyles.b}
-                data-sal="fade"
-                data-sal-duration="2000"
-                data-sal-delay="700"
-                data-sal-easing="ease">
-                <h3>US-based Full-stack Shopify Developer with over six years of experience working within the Shopify platform, as well as building headless Shopify sites.</h3>
-            </div>
-            <div className={overviewStyles.c}
-                data-sal="fade"
-                data-sal-duration="2000"
-                data-sal-delay="300"
-                data-sal-easing="ease">
-                <ul>
-                    <li>Shopify Design & Build</li>
-                    <li>3rd-Party App Integration</li>
-                    <li>API Integration</li>
-                    <li>Content Management</li>
-                    <li>Email Automation</li>
-                    <li>Headless eCommerce</li>
-                    <li>Inventory Management</li>
-                    <li>Platform / Data Migration</li>
-                    <li>Site Optimization</li>
-                    <li>Theme Development</li>
-                    <li>Transportation & Fulfillment Setup</li>
-                    <li>Tweaks & Customizations</li>
-                </ul>
-            </div>
-            <div className={overviewStyles.d}>
-                <ul>
-
-                </ul>
-            </div>
-        </div>
-
+            )}
+        />
     )
-
-
 }
