@@ -36,6 +36,8 @@ $mobileWidth: 480px;
     }
 }
 
+
+
 @keyframes pop-in {
     0% {
         opacity: 0;
@@ -71,6 +73,7 @@ hr {
     }
     .hero h1 {
         font-size: 5vmax;
+        max-width: 100%;
     }
     .hero h2 {
         font-size: 4.5vmax;
@@ -78,9 +81,7 @@ hr {
     hr {
         display: none;
     }
-}
-
-.partners {
-    display: flex;
-    justify-content: flex-end;
+    .partners {
+        display: none;
+    }
 }

@@ -58,6 +58,7 @@ export default function TechPartners(data) {
                         <div className={techPartnerStyles.techPartnerGrid}>
                             <a href="https://www.shopify.com" target="_blank"
                                 rel="noreferrer noopener" alt="Shopify"
+                                style={{ opacity: "0.8" }}
                                 data-sal="fade"
                                 data-sal-duration="2000"
                                 data-sal-delay="400"
@@ -69,6 +70,7 @@ export default function TechPartners(data) {
                                 target="_blank"
                                 rel="noreferrer noopener"
                                 alt="Klavio"
+                                style={{ opacity: "0.8" }}
                                 data-sal="fade"
                                 data-sal-duration="2000"
                                 data-sal-delay="600"
@@ -78,6 +80,7 @@ export default function TechPartners(data) {
                             </a>
 
                             <a href="https://www.netlify.com/" target="_blank" rel="noreferrer noopener" alt="Netlify"
+                                style={{ opacity: "0.9" }}
                                 data-sal="fade"
                                 data-sal-duration="2000"
                                 data-sal-delay="600"
@@ -85,6 +88,7 @@ export default function TechPartners(data) {
                                 <Img fixed={data.netlify.childImageSharp.fixed} />
                             </a>
                             <a href="https://www.contentful.com/" target="_blank" rel="noreferrer noopener" alt="Contentful"
+                                style={{ opacity: "0.9" }}
                                 data-sal="fade"
                                 data-sal-duration="2000"
                                 data-sal-delay="800"
