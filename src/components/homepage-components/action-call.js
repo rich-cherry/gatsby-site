@@ -11,7 +11,7 @@ export default function Overview() {
                 data-sal-duration="2000"
                 data-sal-delay="500"
                 data-sal-easing="ease">
-                <h1>Ready to start? Let's talk.</h1>
+                <h1>Ready to start? Let's talk -</h1>
                 <Link to="/contact"><button className={actionCallStyles.button}><span>Get in touch</span></button></Link>
             </div>
         </div>
