@@ -70,6 +70,7 @@ export default function Services({ className }) {
                                         <p>Shopify is a global eCommerce platform, servicing small businesses, billion dollar businesses, and everything in between. Within the Shopify platform, I specialize in creating on-brand, best practice user experiences that turn more shoppers into buyers.</p>
                                     </div>
                                 </div>
+
                                 <div className={servicesStyles.textContainer}>
                                     <div className={servicesStyles.border}
                                         data-sal="fade"
@@ -77,7 +78,6 @@ export default function Services({ className }) {
                                         data-sal-delay="300"
                                         data-sal-easing="ease"
                                     >
-
                                         <span><Img fixed={data.klaviyo.childImageSharp.fixed} /></span>
                                         <p>Email remains one of the highest returns on marketing investment you can make, with an estimated $38 in ROI for every $1 spent. Klaviyo seamlessly integrates with Shopify and automates your most common customer email interactions, allowing you more time to focus on growing your business. Other email platforms send emails - Klaviyo makes money.</p>
                                     </div>

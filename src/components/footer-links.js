@@ -7,10 +7,14 @@ import footerStyles from './footer-links.module.scss'
 export default function FooterLinks() {
     return (
         <ul className={footerStyles.links}>
-            <li className={footerStyles.link}>Why Shopify? <FontAwesomeIcon icon={faShopify} /> </li>
-            <li className={footerStyles.link}>Client Login <FontAwesomeIcon icon={faSignInAlt} /></li>
-            <li className={footerStyles.link}><FontAwesomeIcon icon={faGithub} /></li>
-            <li className={footerStyles.link}><FontAwesomeIcon icon={faLinkedin} /></li>
+            <div>
+                <li>Contact</li>
+                <li>Why Shopify? <FontAwesomeIcon icon={faShopify} /> </li>
+                <li>Client Login <FontAwesomeIcon icon={faSignInAlt} /></li>
+            </div>
+
+            <li><FontAwesomeIcon icon={faGithub} /></li>
+            <li><FontAwesomeIcon icon={faLinkedin} /></li>
         </ul>
     )
 }

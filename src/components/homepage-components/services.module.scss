@@ -31,7 +31,7 @@ $mobileWidth: 480px;
 }   
 
 .content-container {
-    margin: 2rem;
+    margin: 1rem;
     display: flex;
     width: 85%;
         h1 {
@@ -40,12 +40,15 @@ $mobileWidth: 480px;
 }
     
 .text-container { 
-    
     p {
         margin: .7rem 0;
         text-align: left;
         font-size: 1.1rem;
     }
+}
+
+.text-container:nth-child(1) {
+    margin-bottom: 2.5rem;
 }
 
 .border {
