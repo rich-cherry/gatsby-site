@@ -16,7 +16,7 @@ export default function Overview() {
             <div className={overviewStyles.a}
                 data-sal="fade"
                 data-sal-duration="2000"
-                // data-sal-delay="300"
+                data-sal-delay="100"
                 data-sal-easing="ease">
                 <div>
                     <h1> overview</h1>
@@ -26,14 +26,14 @@ export default function Overview() {
             <div className={overviewStyles.b}
                 data-sal="fade"
                 data-sal-duration="2000"
-                data-sal-delay="700"
+                data-sal-delay="300"
                 data-sal-easing="ease">
                 <h3>US-based Full-stack Shopify Developer with over six years of experience working within the Shopify platform, as well as building headless Shopify sites.</h3>
             </div>
             <div className={overviewStyles.c}
                 data-sal="fade"
                 data-sal-duration="2000"
-                data-sal-delay="300"
+                data-sal-delay="700"
                 data-sal-easing="ease">
                 <ul>
                     <li>Shopify Design & Build</li>

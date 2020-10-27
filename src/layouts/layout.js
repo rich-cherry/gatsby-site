@@ -5,7 +5,10 @@ import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 export default function Layout(props) {
+  // // const isHome = this.location.pathname !== '/'
+  // if (location.pathname === '/') {
   return (
+
     <StaticQuery
       query={graphql`
                 query {
@@ -31,22 +34,32 @@ export default function Layout(props) {
             <Header />
             {props.children}
           </div>
-          <div className={layoutStyles.partners}>
+          {/* <div className={layoutStyles.partners}>
             <Img fixed={data.shopifyPlus.childImageSharp.fixed}
               alt="Shopify Plus"
               style={{
                 opacity: "0.7",
-                margin: "2rem"
+                marginRight: "4rem"
               }} />
             <Img fixed={data.klaviyo.childImageSharp.fixed}
               style={{
-                opacity: "0.7",
-                margin: "2rem"
+                opacity: "0.7"
               }} />
-          </div>
+          </div> */}
         </div>
       )
       }
     />
   )
+  // } else {
+  //   return (
+  //     <div className={layoutStyles.container}>
+  //       <div className={layoutStyles.contentContainer}>
+  //         <Header />
+  //         {props.children}
+  //       </div>
+  //     </div>
+  //   )
+  // }
 }
+

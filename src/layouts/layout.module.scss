@@ -13,10 +13,10 @@ $mobileWidth: 480px;
   }
 
   .partners {
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-  }
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+    }
 
   @media (max-width: $tabletWidth) {
     .container {

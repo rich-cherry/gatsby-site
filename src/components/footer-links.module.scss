@@ -4,4 +4,16 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    ul {
+        list-style-type: none;
+        margin: 0;
+    }
+}
+
+.social-links {
+    display: flex;
+    li {
+        padding: 1rem;
+
+    }
 }

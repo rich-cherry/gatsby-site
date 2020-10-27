@@ -13,8 +13,10 @@ import '../styles/index.scss'
 import indexStyles from './index.module.scss'
 
 
-export default function IndexPage() {
+
+export default function IndexPage({ className }) {
   return (
+
     <div>
       <Layout>
         <PageTransition>
@@ -37,3 +39,4 @@ export default function IndexPage() {
     </div >
   )
 }
+

@@ -52,12 +52,11 @@ $mobileWidth: 480px;
 }
 
 .tech-partner-grid {
-   
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: repeat(2, 1fr);
-
 }
+
 
 .tech-partner-grid > a {
     color: $dark;
@@ -91,8 +90,8 @@ $mobileWidth: 480px;
         display: block;
     }
     .tech-partner-grid {
-        display: inline-block;
-        text-align: center;
+        display: block;
+      
         padding: 1rem 1rem;
         border-bottom: none;
         border-left: none;
@@ -102,6 +101,7 @@ $mobileWidth: 480px;
     .tech-partner-grid>a {
         border-top: none;
         border-right: none;
+     
     }
     .tech-partner-text {
         padding: 1rem 1rem;

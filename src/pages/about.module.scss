@@ -5,7 +5,7 @@ $light: #fde5e5;
 $tabletWidth: 768px;
 $laptopWidth: 1024px;
 
-@media (min-width: $tabletWidth) {
+@media (min-width: 950px) {
     .wrapper {
         color: $dark;
         display: grid;
@@ -131,8 +131,10 @@ $laptopWidth: 1024px;
     }
 }
 
-@media (max-width: $tabletWidth) {
+@media (max-width: 950px) {
     .wrapper {
+        display: block;
+        padding: 2rem;
         h1 {
             font-family: futura-pt, sans-serif;
             font-size: 1.5rem;
@@ -147,12 +149,13 @@ $laptopWidth: 1024px;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            margin: 0;
             li {
-                padding: .3rem;
+                padding: 0 1rem;
             }
         }
         >div {
-            padding-bottom: 3rem;
+            padding-bottom: 1rem;
         }
     }
 }

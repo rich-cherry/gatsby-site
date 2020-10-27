@@ -7,6 +7,10 @@ $laptopWidth: 1024px;
 $tabletWidth: 768px;
 $mobileWidth: 480px;
 
+.container {
+    min-height: 100vh;
+}
+
 .animate-pop-in {
     animation: pop-in 4s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
     opacity: 0;
