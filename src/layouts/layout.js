@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/header'
 import layoutStyles from './layout.module.scss'
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
 export default function Layout(props) {
   // // const isHome = this.location.pathname !== '/'
