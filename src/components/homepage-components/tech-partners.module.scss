@@ -49,6 +49,14 @@ $mobileWidth: 480px;
         color: $dark;
         width: 15rem;
     }
+    hr {
+        margin: 4rem 0;
+        border-width: 0;
+        border-top: 2px solid $dark;
+        width: 40px;
+        text-align: left;
+        margin-left: 0;
+    }
 }
 
 .tech-partner-grid {

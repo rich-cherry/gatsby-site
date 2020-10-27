@@ -50,9 +50,12 @@ $mobileWidth: 480px;
         list-style-type: none;
     }
     hr {
-        border-color: $dark;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin: 4rem 0;
+        border-width: 0;
+        border-top: 2px solid $dark;
+        width: 40px;
+        text-align: left;
+        margin-left: 0;
     }
 }
 
