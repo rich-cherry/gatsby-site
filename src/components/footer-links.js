@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faShopify, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { Link, graphql, StaticQuery } from "gatsby"
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import footerStyles from './footer-links.module.scss'
 
