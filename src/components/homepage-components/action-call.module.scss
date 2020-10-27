@@ -102,6 +102,13 @@ $mobileWidth: 480px;
     .button {
         margin: 0;
         margin-top: 2rem;
+        width: 45%;
+    }
+}
+
+@media(max-width: $mobileWidth){
+    .button {
+        
         width: 80%;
     }
 }
