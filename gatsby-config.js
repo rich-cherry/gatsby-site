@@ -11,12 +11,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "G-67WKMPXQGT",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
+        head: true,
         anonymize: true,
-        pageTransitionDelay: 0,
-        // Defers execution of google analytics script after page load
-        defer: false
       },
     },
     {
