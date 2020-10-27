@@ -10,6 +10,7 @@ $mobileWidth: 480px;
 .container {
     display: flex;
     justify-content: center; 
+    margin: 0 auto;
     p {
         font-weight: 300;
         font-style: normal;
@@ -115,6 +116,9 @@ textarea:focus {
 }
 
 @media (max-width: $tabletWidth) {
+    .container {
+        width: 90%;
+    }
     .form {
         width: 100%;
         padding: 0 0.5rem;

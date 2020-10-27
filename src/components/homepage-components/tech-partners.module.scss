@@ -84,6 +84,7 @@ $mobileWidth: 480px;
     .container {
         height: auto;
         display: block;
+        padding: 5rem 0 3rem 0;
     }
     .tech-partner-container {
         padding: 0;
@@ -91,8 +92,6 @@ $mobileWidth: 480px;
     }
     .tech-partner-grid {
         display: block;
-      
-        padding: 1rem 1rem;
         border-bottom: none;
         border-left: none;
         grid-auto-rows: auto;
@@ -104,9 +103,9 @@ $mobileWidth: 480px;
      
     }
     .tech-partner-text {
-        padding: 1rem 1rem;
         p {
             width: 100%;
         }
+        padding: 0;
     }
 }
