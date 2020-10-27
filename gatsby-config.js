@@ -4,7 +4,10 @@ module.exports = {
   siteMetadata: {
     title: 'richcherry.io',
     logo: 'rc',
-    author: 'Rich Cherry'
+    author: 'Rich Cherry',
+    url: 'https://richcherry.io',
+    description: 'US- based Full- stack Shopify Developer with over six years of experience working within the Shopify platform, as well as building headless Shopify sites.',
+    image: '/static/favicon.ico'
   },
   plugins: [
     {
