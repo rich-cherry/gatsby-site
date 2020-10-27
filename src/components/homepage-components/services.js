@@ -12,14 +12,14 @@ export default function Services({ className }) {
                 query {
                     klaviyo: file(relativePath: { eq: "images/brands/klaviyo-silver.png"}) {
                         childImageSharp {
-                            fixed(width: 250){
+                            fixed(width: 200){
                                 ...GatsbyImageSharpFixed
                             }
                         }
                     }
                     shopifyPlus: file(relativePath: { eq: "images/brands/shopify-plus.png"}) {
                         childImageSharp {
-                            fixed(width: 175){
+                            fixed(width: 150){
                                 ...GatsbyImageSharpFixed
                             }
                         }

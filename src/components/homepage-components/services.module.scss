@@ -69,7 +69,7 @@ $mobileWidth: 480px;
 
 @media (max-width: $tabletWidth) {
     .container {
-        padding: 4rem 1rem;
+        padding: 4rem 0;
     }
     .content-container {
         display: block;

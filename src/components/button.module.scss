@@ -10,7 +10,7 @@ $tabletWidth: 768px;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transition: all 0.5s;
-    min-width: 275px;  
+  
   }
 
   @keyframes fadeInAnimation {
@@ -65,6 +65,7 @@ $tabletWidth: 768px;
 @media (max-width: $tabletWidth) {
     .button {
         padding: 1.5vmax 2vmax;
+        width: 80%;
     }
 }
 

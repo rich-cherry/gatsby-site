@@ -20,7 +20,6 @@ $mobileWidth: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
-
     h1 {
         color: $dark;
         font-family: futura-pt, sans-serif;
@@ -38,12 +37,12 @@ $mobileWidth: 480px;
     margin-left: 3rem;
     border: 2px solid $dark;
     background: none;
-    padding: 1vmax 8vmax;
+    padding: 1vmax 6rem;
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transition: all 0.5s;
-    min-width: 275px;
+ 
 }
 
 @keyframes fadeInAnimation {
@@ -99,5 +98,6 @@ $mobileWidth: 480px;
     }
     .button {
         margin: 2rem 0 0 0;
+        width: 80%;
     }
 }
