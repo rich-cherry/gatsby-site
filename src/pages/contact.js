@@ -41,7 +41,7 @@ export default function Contact() {
       <PageTransition>
         <div className={contactStyles.container}>
           <form
-            name="contact v6"
+            name="contact v7"
             method="post"
             action="/thanks/"
             data-netlify="true"
@@ -52,7 +52,7 @@ export default function Contact() {
             <div>
               <h1>Let's Talk</h1>
             </div>
-            <input type="hidden" name="form-name" value="contact v6" />
+            <input type="hidden" name="form-name" value="contact v7" />
             <p hidden>
               <label>
                 Don’t fill this out: <input name="bot-field" onChange={handleChange} />
