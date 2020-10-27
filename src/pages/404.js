@@ -12,7 +12,7 @@ export default function NotFound() {
         <Head title="Not Found" />
         <div className={errorStyles.container}
           data-sal="slide-left"
-          data-sal-duration="2000"
+          data-sal-duration="1000"
           data-sal-easing="ease">
           <h1>Uh oh...</h1>
           <h2>That page doesn't seem to exist.</h2>
