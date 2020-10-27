@@ -60,7 +60,7 @@ export default function TechPartners() {
                                 rel="noreferrer noopener" alt="Shopify"
                                 data-sal="fade"
                                 data-sal-duration="2000"
-                                data-sal-delay="400"
+                                data-sal-delay="200"
                                 data-sal-easing="ease"
                             >
                                 <Img fixed={data.shopify.childImageSharp.fixed} />
@@ -71,7 +71,7 @@ export default function TechPartners() {
                                 alt="Klavio"
                                 data-sal="fade"
                                 data-sal-duration="2000"
-                                data-sal-delay="800"
+                                data-sal-delay="400"
                                 data-sal-easing="ease"
                             >
                                 <Img fixed={data.klaviyo.childImageSharp.fixed} />
@@ -79,7 +79,7 @@ export default function TechPartners() {
                             <a href="https://www.netlify.com/" target="_blank" rel="noreferrer noopener" alt="Netlify"
                                 data-sal="fade"
                                 data-sal-duration="2000"
-                                data-sal-delay="400"
+                                data-sal-delay="200"
                                 data-sal-easing="ease"
                             >
                                 <Img fixed={data.netlify.childImageSharp.fixed} />
@@ -87,7 +87,7 @@ export default function TechPartners() {
                             <a href="https://www.contentful.com/" target="_blank" rel="noreferrer noopener" alt="Contentful"
                                 data-sal="fade"
                                 data-sal-duration="2000"
-                                data-sal-delay="800"
+                                data-sal-delay="400"
                                 data-sal-easing="ease"
                             >
                                 <Img fixed={data.contentful.childImageSharp.fixed} />

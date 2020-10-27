@@ -8,7 +8,7 @@ export default function Overview() {
             <div className={actionCallStyles.overviewContainer}
                 data-sal="fade"
                 data-sal-duration="2000"
-                data-sal-delay="500"
+                data-sal-delay="200"
                 data-sal-easing="ease">
                 <h1>Ready to start? Let's talk.</h1>
                 <Link to="/contact"><button className={actionCallStyles.button}><span>Get in touch</span></button></Link>
