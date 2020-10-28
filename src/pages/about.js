@@ -33,7 +33,7 @@ export default function About(data) {
                 data-sal-duration="2000"
                 data-sal-easing="ease"
               >
-                <Img fixed={data.rc.childImageSharp.fluid}
+                <Img fluid={data.rc.childImageSharp.fluid}
                   style={{
                     width: "100%",
                     height: "100%"
@@ -64,7 +64,6 @@ export default function About(data) {
                     <li>Git <FontAwesomeIcon icon={faGithub} /></li>
                     <li>GraphQL</li>
                     <li>Javascript <FontAwesomeIcon icon={faJs} /></li>
-                    {/* <li>NodeJS <FontAwesomeIcon icon={faNodeJs} /></li> */}
                     <li>Liquid <FontAwesomeIcon icon={faShopify} /></li>
                     <li>ReactJS <FontAwesomeIcon icon={faReact} /></li>
                     <li>Sass <FontAwesomeIcon icon={faSass} /></li>
@@ -82,7 +81,7 @@ export default function About(data) {
                     <li>Adobe Illustrator</li>
                     <li>Adobe Photoshop</li>
                     <li>Bootstrap <FontAwesomeIcon icon={faBootstrap} /></li>
-                    <li>Ruby <FontAwesomeIcon /></li>
+                    <li>Ruby</li>
                     <li>Ruby on Rails</li>
                     <li>Shogun</li>
                     <li>SketchUp</li>

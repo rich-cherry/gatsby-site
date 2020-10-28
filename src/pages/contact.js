@@ -64,7 +64,7 @@ export default function Contact() {
                 <label htmlFor="first-name">
                   First Name:
             <br />
-                  <input className={contactStyles.input} id="first-name" type="text" name="First Name" onChange={handleChange} placeholder="First Name" autocomplete="on" />
+                  <input className={contactStyles.input} id="first-name" type="text" name="First Name" onChange={handleChange} placeholder="First Name" autoComplete="on" />
                 </label>
               </p>
               <div className={contactStyles.space}></div>
@@ -97,16 +97,16 @@ export default function Contact() {
               What can I help you with?
               <br />
               <input type="checkbox" className={contactStyles.checkbox} id="newShopifyStore" name="interest" onChange={handleChange} value="New Shopify Store" />
-              <label for="newShopifyStore" htmlFor="newShopifyStore">New Shopify Store</label><br />
+              <label htmlFor="newShopifyStore">New Shopify Store</label><br />
 
               <input type="checkbox" className={contactStyles.checkbox} id="shopifyMigration" name="interest" onChange={handleChange} value="Shopify Migration" />
-              <label for="shopifyMigration" htmlFor="shopifyMigration">Migrate an existing eCommerce store to Shopify</label><br />
+              <label htmlFor="shopifyMigration">Migrate an existing eCommerce store to Shopify</label><br />
 
               <input type="checkbox" className={contactStyles.checkbox} id="shopifyCustomizations" name="interest" onChange={handleChange} value="Shopify Tweaks and Customizations" />
-              <label for="shopifyCustomizations" htmlFor="shopifyCustomizations">Shopify Tweaks / Customizations</label><br />
+              <label htmlFor="shopifyCustomizations">Shopify Tweaks / Customizations</label><br />
 
               <input type="checkbox" className={contactStyles.checkbox} id="klavioSetup" name="interest" onChange={handleChange} value="Klaviyo Email Integration and Setup" />
-              <label for="klavioSetup" htmlFor="klavioSetup">Klaviyo Email Integration / Setup</label>
+              <label htmlFor="klavioSetup">Klaviyo Email Integration / Setup</label>
             </p>
             <p>
               <label htmlFor="website">
@@ -124,7 +124,7 @@ export default function Contact() {
               </label>
             </p>
             <div className={buttonStyles.buttonContainer}>
-              <button className={buttonStyles.button} type="submit" formnovalidate="formnovalidate">Send</button>
+              <button className={buttonStyles.button} type="submit" formNoValidate="formnovalidate">Send</button>
             </div>
           </form>
         </div>

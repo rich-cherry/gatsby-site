@@ -11,7 +11,7 @@ export default function TechPartners() {
                     shopify: file(relativePath: { eq: "images/brands/shopify.png"}) {
                         childImageSharp {
                             fixed(width: 190){
-                                ...GatsbyImageSharpFixed
+                                ...GatsbyImageSharpFixed_withWebp
                             }
                         }
                     }  
@@ -25,14 +25,14 @@ export default function TechPartners() {
                     netlify: file(relativePath: { eq: "images/brands/netlify.png"}) {
                         childImageSharp {
                             fixed(width: 175){
-                                ...GatsbyImageSharpFixed
+                                ...GatsbyImageSharpFixed_withWebp
                             }
                         }
                     }
                     contentful: file(relativePath: { eq: "images/brands/contentful.png"}) {
                         childImageSharp {
                             fixed(width: 185){
-                                ...GatsbyImageSharpFixed
+                                ...GatsbyImageSharpFixed_withWebp
                             }
                         }
                     }      
