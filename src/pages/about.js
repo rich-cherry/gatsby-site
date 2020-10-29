@@ -29,8 +29,9 @@ export default function About(data) {
             <Head title="About" />
             <div className={aboutStyles.wrapper}>
               <div className={aboutStyles.photo}
-                data-sal="slide-up"
+                data-sal="fade"
                 data-sal-duration="2000"
+                data-sal-delay="300"
                 data-sal-easing="ease"
               >
                 <Img fluid={data.rc.childImageSharp.fluid}
