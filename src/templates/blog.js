@@ -16,11 +16,6 @@ export const query = graphql`
         json
       }
     }
-    // contentfulYouTubeVideo {
-    //   embedUrl {
-    //     embedUrl
-    //   }
-    // }  
   }
 `
 
