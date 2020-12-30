@@ -5,8 +5,6 @@ import blogStyles from './blog.module.scss'
 import Head from "../components/head"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 
-
-
 export default function BlogPage() {
   const data = useStaticQuery(graphql`
       query {
@@ -27,14 +25,12 @@ export default function BlogPage() {
       }
     `)
 
-
   return (
     <div>
       <Layout>
         <Head title="Blog" />
         <PageTransition>
           <div className={blogStyles.container}>
-            <h1>Blog Page</h1>
             <ol className={blogStyles.posts}>
               {data.allContentfulBlogPost.edges.map((edge) => {
                 return (

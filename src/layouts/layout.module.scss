@@ -17,7 +17,10 @@ $mobileWidth: 480px;
       bottom: 2rem;
       right: 2rem;
     }
-
+  .hide-parters {
+    display:none;
+  }
+    
   @media (max-width: $tabletWidth) {
     .container {
       width: 100%;
@@ -25,7 +28,7 @@ $mobileWidth: 480px;
     }
     .partners {
       width: 100%;
-      position: absolute;
+      position: fixed;
       bottom: 1rem;
       right: 0;
       text-align: center;

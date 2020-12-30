@@ -5,12 +5,11 @@ $tabletWidth: 768px;
 .button {
     border: 1px solid $gold;
     background: none;
-    padding: 1vmax 8vmax;
+    padding: 0.5vmax 8vmax;
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transition: all 0.5s;
-  
   }
 
   @keyframes fadeInAnimation {

@@ -30,7 +30,7 @@ export default function About(data) {
             <div className={aboutStyles.wrapper}>
               <div className={aboutStyles.photo}
                 data-sal="fade"
-                data-sal-duration="2000"
+                data-sal-duration="1000"
                 data-sal-delay="300"
                 data-sal-easing="ease"
               >
@@ -42,7 +42,7 @@ export default function About(data) {
               </div>
               <div className={aboutStyles.intro}
                 data-sal="slide-left"
-                data-sal-duration="2000"
+                data-sal-duration="1000"
                 data-sal-easing="ease"
               >
                 <h1>About</h1>
@@ -52,7 +52,7 @@ export default function About(data) {
               </div>
               <div className={aboutStyles.stack1}
                 data-sal="slide-right"
-                data-sal-duration="2000"
+                data-sal-duration="1000"
                 // data-sal-delay="1000"
                 data-sal-easing="ease"
               >
@@ -73,7 +73,7 @@ export default function About(data) {
               </div>
               <div className={aboutStyles.stack2}
                 data-sal="slide-down"
-                data-sal-duration="2000"
+                data-sal-duration="1000"
                 data-sal-easing="ease"
               >
                 <div className={aboutStyles.border}>
@@ -92,7 +92,7 @@ export default function About(data) {
               </div>
               <div className={aboutStyles.stack3}
                 data-sal="slide-left"
-                data-sal-duration="2000"
+                data-sal-duration="1000"
                 data-sal-easing="ease"
               >
                 <div className={aboutStyles.border}>

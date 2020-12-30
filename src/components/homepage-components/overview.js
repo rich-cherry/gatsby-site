@@ -1,14 +1,5 @@
 import React from 'react'
 import overviewStyles from './overview.module.scss'
-// import TerminalSvg from '../../images/icons/terminal-solid.svg'
-// import ChartSvg from '../../images/icons/chart.svg'
-// import CodeSvg from '../../images/icons/code.svg'
-// import BrushSvg from '../../images/icons/brush-solid.svg'
-
-// const Terminal = () => <><img src={TerminalSvg} style={{ width: "7%" }} /></>
-// const Chart = () => <><img src={ChartSvg} style={{ width: "7%" }} /></>
-// const Code = () => <><img src={CodeSvg} style={{ width: "7%" }} /></>
-// const Brush = () => <><img src={BrushSvg} style={{ width: "7%" }} /></>
 
 export default function Overview() {
     return (

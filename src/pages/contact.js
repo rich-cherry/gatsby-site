@@ -4,7 +4,6 @@ import Head from "../components/head"
 import contactStyles from './contact.module.scss'
 import buttonStyles from "../components/button.module.scss"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
-import Footer from "../components/footer"
 import Layout from "../layouts/layout"
 
 function encode(data) {
@@ -110,7 +109,7 @@ export default function Contact() {
             </p>
             <p>
               <label htmlFor="website">
-                Website (if applicable):
+                Website:
             <br />
                 <input className={contactStyles.input} id="website" type="url" name="Website" onChange={handleChange} placeholder="Website" />
               </label>
@@ -129,7 +128,6 @@ export default function Contact() {
           </form>
         </div>
       </PageTransition>
-      <Footer />
     </Layout>
   )
 }

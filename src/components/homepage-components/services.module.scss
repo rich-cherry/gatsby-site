@@ -1,5 +1,7 @@
 $dark: #12191C;
 $gold: #AEA079;
+$light: #fde5e5;
+$offwhite: #F8F8F8;
 $mediaMaxWidth: 1260px;
 $laptopWidth: 1024px;
 $tabletWidth: 768px;
@@ -9,8 +11,8 @@ $mobileWidth: 480px;
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 6rem 4rem;
-    background-image: linear-gradient(rgba(18, 25, 28, .5),
+    padding: 12rem 4rem;
+    background-image: linear-gradient(rgba(18, 25, 28, .2),
             rgba(18, 25, 28, 1));
     h1 {
         font-family: futura-pt, sans-serif;
@@ -80,5 +82,83 @@ $mobileWidth: 480px;
     }
     .border:before {
         border: none;
+    }
+}
+
+.button {
+    margin-left: 3rem;
+    border: 2px solid $gold;
+    background: none;
+    width: 50%;
+    padding: .5rem 0;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: all 0.5s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.button:nth-child(1) {
+    text-transform: uppercase;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: $gold;
+}
+
+.button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\21D2';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media (max-width: $laptopWidth) {
+    .container {
+        text-align: center;
+    }
+    .overview-container {
+        display: block;
+
+    }
+    .button {
+        margin: 0;
+        margin-top: 2rem;
+        width: 45%;
+    }
+}
+
+@media(max-width: $mobileWidth) {
+    .button {
+        width: 80%;
     }
 }
