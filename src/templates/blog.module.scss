@@ -23,7 +23,7 @@
 .blog-content-container {
     color: #bbbbbb;
     background: #222831;
-    padding: 1rem 5rem;
+    padding: 2rem 5rem;
     width: 100%;
     margin: 0 auto;
     white-space: pre;
@@ -42,5 +42,8 @@
         word-wrap: break-word;
         background-color: transparent;
         color: #bbbbbb;
+    }
+    hr {
+        background: #bbbbbb;
     }
 }
