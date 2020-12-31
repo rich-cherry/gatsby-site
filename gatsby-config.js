@@ -1,5 +1,10 @@
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
-const path = require("path")
+exports.onCreateNode = ({ node }) => {
+  fmImagesToRelative(node);
+};
+
+const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
