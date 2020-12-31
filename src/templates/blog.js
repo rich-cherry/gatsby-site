@@ -16,11 +16,7 @@ export const query = graphql`
         json
       }
     }
-    contentfulYouTubeVideo {
-      embedUrl {
-        embedUrl
-      }
-    }  
+
   }
 `
 
@@ -42,9 +38,7 @@ export default function Blog(props) {
         <div className={blogStyles.container}>
           <h1>{props.data.contentfulBlogPost.title}</h1>
           <p>{props.data.contentfulBlogPost.publishedDate}</p>
-          <div className={blogStyles.aspectRatio}
-            dangerouslySetInnerHTML={{ __html: props.data.contentfulYouTubeVideo.embedUrl.embedUrl }}
-          />
+
           <div className={blogStyles.blogContentContainer}>
             {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
           </div>
