@@ -1,5 +1,10 @@
-
 const path = require(`path`)
+
+const { fmImagesToRelative } = require('gatsby-remark-relative-images-v2');
+
+exports.onCreateNode = ({ node }) => {
+  fmImagesToRelative(node);
+};
 
 module.exports = {
   siteMetadata: {
@@ -59,7 +64,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-relative-images'
+            resolve: `gatsby-remark-relative-images-v2`,
           },
           {
             resolve: 'gatsby-remark-images',
