@@ -17,6 +17,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-181452461-1",
+        head: true,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         typekit: {
