@@ -17,14 +17,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'G-67WKMPXQGT',
-        head: true,
-        anonymize: true,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         typekit: {

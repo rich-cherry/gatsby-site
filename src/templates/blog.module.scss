@@ -1,5 +1,11 @@
+$mediaMaxWidth: 1260px;
+$laptopWidth: 1024px;
+$tabletWidth: 768px;
+$mobileWidth: 480px;
+
+
 .container {
-    width:85%;
+    width:90%;
     margin: 0 auto;
     h1 {
         font-size: 1.75rem;
@@ -45,5 +51,11 @@
     }
     hr {
         background: #bbbbbb;
+    }
+}
+
+@media (max-width: $tabletWidth){
+    .blog-content-container {
+        padding: 2rem 1rem;
     }
 }

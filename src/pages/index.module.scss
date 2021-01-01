@@ -98,3 +98,7 @@ $mobileWidth: 480px;
         display: none;
     }
 }
+
+.avoid-clicks {
+    pointer-events: none;
+}
