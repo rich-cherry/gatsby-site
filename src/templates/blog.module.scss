@@ -73,6 +73,10 @@ $mobileWidth: 480px;
 
 @media (max-width: $tabletWidth){
     .blog-content-container {
-        padding: 2rem 1rem;
+        width: 95%;
+        padding: 2rem 0.25rem;
+        .code-block {
+            padding: 1rem 0.5rem;
+        }
     }
 }
