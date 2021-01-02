@@ -49,7 +49,7 @@ export default function Contact() {
             className={contactStyles.form}
           >
             <div>
-              <h1>Let's Talk</h1>
+              <h1>Get in touch</h1>
             </div>
             <input type="hidden" name="form-name" value="contact v7" />
             <p hidden>

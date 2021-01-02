@@ -3,6 +3,7 @@ import Layout from '../layouts/layout'
 import { graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Head from "../components/head"
+import Footer from "../components/footer"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import blogStyles from './blog.module.scss'
 import Img from "gatsby-image"
@@ -70,6 +71,7 @@ export default function Blog(props) {
           </div>
         </div>
       </PageTransition>
+      <Footer />
     </Layout>
   )
 }
