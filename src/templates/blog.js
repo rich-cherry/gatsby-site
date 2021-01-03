@@ -1,13 +1,12 @@
 import React from 'react'
 import Layout from '../layouts/layout'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Head from "../components/head"
 import Footer from "../components/footer"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import blogStyles from './blog.module.scss'
 import Img from "gatsby-image"
-
 
 export const query = graphql`
   query ($slug: String!) {
@@ -34,7 +33,14 @@ export const query = graphql`
       code {
         json
       }
-    }
+    }      
+    rc: file(relativePath: { eq: "images/rc_color_close.png"}) {
+        childImageSharp {
+            fixed(width: 40, height: 40){
+                ...GatsbyImageSharpFixed
+            }
+        }
+    }             
   }
 `
 
@@ -49,7 +55,6 @@ export default function Blog(props) {
       }
     }
   }
-  console.log(props.data.contentfulCodeBlock.code.code)
   return (
     <Layout>
       <PageTransition>
@@ -59,7 +64,12 @@ export default function Blog(props) {
             fluid={props.data.contentfulIntroImage.image.fluid} />
           <div className={blogStyles.blogContentContainer}>
             <h1>{props.data.contentfulBlogPost.title}</h1>
-            <p>{props.data.contentfulBlogPost.publishedDate}</p>
+            <div className={blogStyles.postDetails}>
+              <Link to="/blog">
+                <Img className={blogStyles.avatar} fixed={props.data.rc.childImageSharp.fixed} />
+              </Link>
+              <p>{props.data.contentfulBlogPost.publishedDate}</p>
+            </div>
             <div className={blogStyles.aspectRatio}
               dangerouslySetInnerHTML={{ __html: props.data.contentfulYouTubeVideo.embedUrl.embedUrl }}
             />

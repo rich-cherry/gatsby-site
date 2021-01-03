@@ -56,8 +56,6 @@ $mobileWidth: 480px;
     }
 }
 
-
-
 @keyframes pop-in {
     0% {
         opacity: 0;
@@ -68,8 +66,6 @@ $mobileWidth: 480px;
         transform: none;
     }
 }
-
-
 
 @media (max-width: $laptopWidth) {
     .delay h1 {
