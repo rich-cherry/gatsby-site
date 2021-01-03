@@ -34,18 +34,23 @@ $mobileWidth: 480px;
 
 .blog-content-container {
     color: #2e2e2e;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
     background: white;
     padding: 2rem 5rem;
     width: 85%;
     margin: 0 auto;
     p {
         color: #2e2e2e;
-                overflow-x: auto;
-                white-space: pre-wrap;
-                white-space: -moz-pre-wrap;
-                white-space: -pre-wrap;
-                white-space: -o-pre-wrap;
-                word-wrap: break-word;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -pre-wrap;
+        white-space: -o-pre-wrap;
+        word-wrap: break-word;
+        a { 
+            color: blue;
+        }
     }
     .code-block {
         color: #bbbbbb;
