@@ -17,8 +17,7 @@ export default function IndexPage() {
         <PageTransition>
           <div className={indexStyles.hero}>
             <Head title="Developer" />
-            <h1 className={indexStyles.animatePopIn}>Hi, I'm Rich 👋</h1>
-            <h1 className={indexStyles.animatePopIn}>I work on Shopify sites, providing everything from small tweaks and customizations to full site builds and custom apps.</h1>
+            <h1 className={indexStyles.animatePopIn}>US-based Shopify Developer offering tweaks, custom features, migrations, site builds from scratch, and custom private apps.</h1>
             <h2 className={indexStyles.animatePopIn}>Need help with a project?</h2>
             <Button>hire me today</Button>
             <hr />
