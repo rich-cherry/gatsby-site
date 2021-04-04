@@ -19,8 +19,9 @@ $mobileWidth: 480px;
 }
 
 .hero {
-    position: relative;
-    top: 7vmax;
+  position: absolute;
+  top: 35%;
+  left: 10%;
     width: 85%;
     margin: 0 auto;
     h1 {
@@ -69,7 +70,7 @@ $mobileWidth: 480px;
 
 @media (max-width: $laptopWidth) {
     .delay h1 {
-        font-size: 4vmax;
+        font-size: 3vmax;
     }
     .delay h2 {
         font-size: 3vmax;
@@ -81,11 +82,11 @@ $mobileWidth: 480px;
         max-width: 95%;
     }
     .hero h1 {
-        font-size: 5vmax;
+        font-size: 3vmax;
         max-width: 100%;
     }
     .hero h2 {
-        font-size: 4.5vmax;
+        font-size: 3vmax;
     }
     .hero hr {
         display: none;

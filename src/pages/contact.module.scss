@@ -9,7 +9,7 @@ $mobileWidth: 480px;
 
 .container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     margin: 0 auto;
     p {
         font-weight: 300;
@@ -26,7 +26,7 @@ $mobileWidth: 480px;
     opacity: 0.9;
     padding: 0 4rem;
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 300;
         font-style: normal;
     }
@@ -83,7 +83,7 @@ $mobileWidth: 480px;
     }
 
     button:hover {
-        background:#gold; 
+        background:#gold;
     }
 
     button:active {
