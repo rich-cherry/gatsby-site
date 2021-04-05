@@ -21,7 +21,7 @@ export const query = graphql`
       embedUrl {
         embedUrl
       }
-    }  
+    }
     contentfulIntroImage {
       image {
         fluid{
@@ -33,14 +33,7 @@ export const query = graphql`
       code {
         json
       }
-    }      
-    rc: file(relativePath: { eq: "images/rc_color_close.png"}) {
-        childImageSharp {
-            fixed(width: 40, height: 40){
-                ...GatsbyImageSharpFixed
-            }
-        }
-    }             
+    }
   }
 `
 
@@ -64,12 +57,12 @@ export default function Blog(props) {
             fluid={props.data.contentfulIntroImage.image.fluid} />
           <div className={blogStyles.blogContentContainer}>
             <h1>{props.data.contentfulBlogPost.title}</h1>
-            <div className={blogStyles.postDetails}>
+            {/*}<div className={blogStyles.postDetails}>
               <Link to="/blog">
                 <Img className={blogStyles.avatar} fixed={props.data.rc.childImageSharp.fixed} />
               </Link>
               <p>{props.data.contentfulBlogPost.publishedDate}</p>
-            </div>
+  </div>*/}
             <div className={blogStyles.aspectRatio}
               dangerouslySetInnerHTML={{ __html: props.data.contentfulYouTubeVideo.embedUrl.embedUrl }}
             />
