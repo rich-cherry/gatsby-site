@@ -15,8 +15,11 @@ export default function Footer(props) {
   return (
     <div className={footerStyles.footer}>
       <div className={footerStyles.container}>
-        {props.children}
-        <Link to="/"><p>Created by {data.site.siteMetadata.author}, © {new Date().getFullYear()}</p></Link>
+        <Link className={footerStyles.contact} to="/contact"><button className={footerStyles.button}><span>Get in touch</span></button></Link>
+        <div className={footerStyles.links}>
+          {props.children}
+        </div>
+        <Link className={footerStyles.created} to="/"><p>Created by {data.site.siteMetadata.author}, © {new Date().getFullYear()}</p></Link>
       </div >
     </div>
   )

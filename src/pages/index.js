@@ -51,10 +51,9 @@ export default function IndexPage() {
             </PageTransition>
           </Layout>
           <Overview />
-          <Services />
-          <Footer>
+          {/*}<Footer>
             <FooterLinks />
-          </Footer>
+      </Footer>*/}
         </div>
       )}
     />
