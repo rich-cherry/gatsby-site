@@ -119,7 +119,7 @@ export default function Contact() {
               <label htmlFor="message">
                 Message:
             <br />
-                <textarea className={contactStyles.input} id="message" name="message" onChange={handleChange} placeholder="Tell us a bit about yourself and your company." />
+                <textarea className={contactStyles.input} id="message" name="message" onChange={handleChange} placeholder="A bit about yourself and your company." />
               </label>
             </p>
             <div className={buttonStyles.buttonContainer}>
