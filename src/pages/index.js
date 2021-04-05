@@ -43,7 +43,7 @@ export default function IndexPage() {
                     data-sal-delay="400"
                     data-sal-easing="ease"
                   >
-                    <Img fixed={data.storetasker.childImageSharp.fixed} />
+                    <Img className={indexStyles.storetasker} fixed={data.storetasker.childImageSharp.fixed} />
                   </a>
                 </p>
                 <hr />
