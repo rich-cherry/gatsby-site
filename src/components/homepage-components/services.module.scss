@@ -8,158 +8,159 @@ $tabletWidth: 768px;
 $mobileWidth: 480px;
 
 .container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 10rem 4rem;
-    background-image: linear-gradient(rgba(18, 25, 28, .7),
-            rgba(18, 25, 28, 0.1));
-    h1 {
-        font-family: futura-pt, sans-serif;
-        font-size: 1.5rem;
-        font-weight: 800;
-        font-style: normal;
-        letter-spacing: .3rem;
-        text-transform: uppercase;
-    }
-    hr {
-        margin-top: 4rem;
-        border-width: 0;
-        border-top: 2px solid #fff;
-        width: 40px;
-        text-align: left;
-        margin-left: 0;
-    }
-}   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  // padding: 10rem 4rem;
+  background-image: linear-gradient(rgba(18, 25, 28, .7),
+          rgba(18, 25, 28, 0.1));
+  h1 {
+    font-family: futura-pt, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+  }
+  hr {
+    margin-top: 4rem;
+    border-width: 0;
+    border-top: 2px solid #fff;
+    width: 40px;
+    text-align: left;
+    margin-left: 0;
+  }
+}
 
 .content-container {
-    margin: 1rem;
-    display: flex;
-    width: 85%;
-        h1 {
-            padding-right: 5rem;
-        }
-}
-    
-.text-container { 
-    p {
-        margin: .7rem 0;
-        text-align: left;
-        font-size: 1.1rem;
+  margin: 1rem;
+  display: flex;
+  width: 85%;
+    h1 {
+      padding-right: 5rem;
     }
+}
+
+.text-container {
+  p {
+    margin: .7rem 0;
+    text-align: left;
+    font-size: 1.1rem;
+  }
 }
 
 .text-container:nth-child(1) {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .border {
-    padding: 2rem 2rem;
-    position: relative;
-    border: 2px solid $gold;
+  padding: 2rem 2rem;
+  position: relative;
+  border: 2px solid $gold;
 }
 
 .border:before {
-    content: " ";
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    right: 3px;
-    bottom: 3px;
-    border: 1px solid $gold;
+  content: " ";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px solid $gold;
 }
 
 @media (max-width: $tabletWidth) {
-    .container {
-        padding: 4rem 0;
-    }
-    .content-container {
-        display: block;
-    }
-    .border {
-        border: none;
-        padding: 1rem 1rem;
-    }
-    .border:before {
-        border: none;
-    }
+  .container {
+    padding: 4rem 0;
+  }
+  .content-container {
+    display: block;
+  }
+  .border {
+    border: none;
+    padding: 1rem 1rem;
+  }
+  .border:before {
+    border: none;
+  }
 }
 
 
 .button {
-    margin-left: 3rem;
-    border: 2px solid $gold;
-    background: none;
-    width: 50%;
-    padding: .5rem 0;
-    animation: fadeInAnimation ease 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    transition: all 0.5s;
+  margin-left: 3rem;
+  border: 2px solid $gold;
+  background: none;
+  width: 500px;
+  padding: .5rem 0;
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transition: all 0.5s;
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-        visibility: hidden;
-    }
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
 
-    100% {
-        opacity: 1;
-        visibility: visible;
-    }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .button:nth-child(1) {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .button:hover {
-    cursor: pointer;
-    background: $gold;
+  cursor: pointer;
+  background: $gold;
 }
 
 .button span {
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
 .button span:after {
-    content: '\21D2';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+  content: '\21D2';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
 .button:hover span {
-    padding-right: 25px;
+  padding-right: 25px;
 }
 
 .button:hover span:after {
-    opacity: 1;
-    right: 0;
+  opacity: 1;
+  right: 0;
 }
 
 @media (max-width: $laptopWidth) {
-    .container {
-        text-align: center;
-    }
-    .overview-container {
-        display: block;
-
-    }
-    .button {
-        margin: 0;
-        margin-top: 2rem;
-        width: 45%;
-    }
+  .container {
+    text-align: center;
+  }
+  .overview-container {
+    display: block;
+  }
+  .button {
+    margin: 0;
+    margin-top: 2rem;
+    width: 45%;
+  }
 }
 
 @media(max-width: $mobileWidth) {
-    .button {
-        width: 80%;
-    }
+  .button {
+    width: 80%;
+  }
 }

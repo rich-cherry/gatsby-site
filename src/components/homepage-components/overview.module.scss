@@ -9,6 +9,7 @@ $mobileWidth: 480px;
 
 .container {
     width: 100%;
+    height: 100vh;
     background-color: #fcf0ea;
     background-image: url("../../images/overview.svg"),
     linear-gradient(135deg, #f8dbd7, #fff2e1);
@@ -16,12 +17,13 @@ $mobileWidth: 480px;
     background-position: 10%;
     background-size: cover;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 2rem;
-    padding: 6rem 8rem;
-    // position: sticky;
-    // top: 0;
-    // z-index: 10;
+    padding: 20vh 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     h1 {
         color: $dark;
         font-size: 1.5rem;
@@ -83,9 +85,12 @@ $mobileWidth: 480px;
     .container {
         background-image: linear-gradient(135deg, #f8dbd7, #fff2e1);
         display: block;
-        padding: 5rem 0 5rem 1rem;
+        padding: 4rem 0 4rem 1rem;
         ul {
             columns: 1;
+        }
+        h3 {
+          font-size: 1.3rem;
         }
     }
     .a {

@@ -23,7 +23,6 @@ export default function Header() {
         </div></Link>
         <nav>
           <ul className={headerStyles.navList}>
-            <li><Link to="/about" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>About</Link></li>
             {/*
             <li><Link to="/blog" className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem}>Blog</Link></li>
             */}
